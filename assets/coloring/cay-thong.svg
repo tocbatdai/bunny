@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="pine">
-<rect width="500" height="500" rx="24" fill="#fff"/>
-<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
-<path class="region" data-region="1" d="M215 280 L215 455 L285 455 L285 280 Z"/><path class="region" data-region="1" d="M250 45 L105 245 L180 245 L85 350 L195 350 L145 430 L355 430 L305 350 L415 350 L320 245 L395 245 Z"/></svg>

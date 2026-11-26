@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="orange">
-<rect width="500" height="500" rx="24" fill="#fff"/>
-<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
-<circle class="region" data-region="1" cx="250" cy="270" r="155"/><path class="region" data-region="1" d="M250 120 Q245 65 300 65 Q315 100 270 130 Z"/></svg>

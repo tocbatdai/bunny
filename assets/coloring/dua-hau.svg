@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="watermelon">
-<rect width="500" height="500" rx="24" fill="#fff"/>
-<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
-<path class="region" data-region="1" d="M65 165 Q250 75 435 165 L395 335 Q250 440 105 335 Z"/><path class="region" data-region="1" d="M65 165 Q250 260 435 165 Z"/><ellipse class="region" data-region="1" cx="155" cy="240" rx="9" ry="15"/><ellipse class="region" data-region="1" cx="220" cy="275" rx="9" ry="15"/><ellipse class="region" data-region="1" cx="285" cy="250" rx="9" ry="15"/><ellipse class="region" data-region="1" cx="350" cy="220" rx="9" ry="15"/></svg>

@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="mushroom">
-<rect width="500" height="500" rx="24" fill="#fff"/>
-<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
-<path class="region" data-region="1" d="M200 255 L190 420 Q250 450 310 420 L300 255 Z"/><path class="region" data-region="1" d="M65 270 Q75 95 250 95 Q425 95 435 270 Z"/><circle class="region" data-region="1" cx="160" cy="205" r="18"/><circle class="region" data-region="1" cx="250" cy="155" r="18"/><circle class="region" data-region="1" cx="340" cy="205" r="18"/></svg>

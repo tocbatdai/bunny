@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="appletree">
-<rect width="500" height="500" rx="24" fill="#fff"/>
-<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
-<path class="region" data-region="1" d="M215 280 L215 455 L285 455 L285 280 Z"/><circle class="region" data-region="1" cx="250" cy="185" r="125"/><circle class="region" data-region="1" cx="160" cy="250" r="62"/><circle class="region" data-region="1" cx="340" cy="250" r="62"/><circle class="region" data-region="1" cx="190" cy="180" r="15"/><circle class="region" data-region="1" cx="310" cy="230" r="15"/><circle class="region" data-region="1" cx="245" cy="280" r="15"/></svg>
