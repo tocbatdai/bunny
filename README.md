@@ -40,7 +40,7 @@ Mở http://localhost:5173. Muốn thử trên điện thoại/tablet cùng Wi-F
 1. Bỏ file vào `assets/coloring/` (PNG nét đen trên nền trắng, hoặc SVG với các vùng có `data-region`).
 2. Thêm một dòng vào `data/drawings.js` (`id` không trùng).
 3. Chạy `python tools/dev_server.py`, mở http://localhost:5173/tools/build.html, bấm **Build** (thêm `?only=id1,id2` để build vài tranh).
-4. Tăng `VERSION` trong `sw.js` để máy đã cài tải lại tranh mới.
+4. Tăng `ART_VERSION` trong `sw.js` để máy đã cài tải lại tranh mới (sửa code thì tăng `APP_VERSION`).
 5. Commit cả các file sinh ra trong `assets/pages`, `assets/thumbs`, `assets/icons`.
 
 ## Deploy

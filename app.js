@@ -67,9 +67,53 @@ const MELODY = [523.25, 659.25, 783.99, 659.25, 587.33, 698.46, 783.99, 698.46, 
 function ctx() {
   const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
   if (!audio) audio = new AC();
-  if (audio.state === "suspended") audio.resume();
+  // iOS leaves the context "interrupted" after locking the screen or switching apps, not just "suspended".
+  if (audio.state !== "running") audio.resume().catch(() => {});
   return audio;
 }
+
+// iPhone/iPad (Safari) mute Web Audio when the device is in silent mode, and older versions only
+// allow sound after something is played inside a touch. On every touch until sound works:
+//  - ask for the "playback" audio session (iOS 17+), which ignores the silent switch like a video;
+//  - on older iOS, loop a silent <audio> clip, which switches the session to playback the same way;
+//  - play a 1-sample silent buffer and prime speech, which unlocks both for later use.
+const isIOS = /iP(hone|od|ad)/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+let unlocked = false, silentClip = null;
+function silentWavUrl() {
+  const rate = 8000, n = rate / 2, buf = new ArrayBuffer(44 + n), v = new DataView(buf);
+  const text = (o, s) => [...s].forEach((ch, i) => v.setUint8(o + i, ch.charCodeAt(0)));
+  text(0, "RIFF"); v.setUint32(4, 36 + n, true); text(8, "WAVEfmt "); v.setUint32(16, 16, true); v.setUint16(20, 1, true);
+  v.setUint16(22, 1, true); v.setUint32(24, rate, true); v.setUint32(28, rate, true); v.setUint16(32, 1, true); v.setUint16(34, 8, true);
+  text(36, "data"); v.setUint32(40, n, true); new Uint8Array(buf, 44).fill(128);
+  return URL.createObjectURL(new Blob([buf], { type: "audio/wav" }));
+}
+function unlockAudio() {
+  if (!state.sound) return;
+  try { if (navigator.audioSession) navigator.audioSession.type = "playback"; } catch {}
+  if (isIOS && !navigator.audioSession) {
+    if (!silentClip) { silentClip = new Audio(silentWavUrl()); silentClip.loop = true; silentClip.setAttribute("playsinline", ""); }
+    if (silentClip.paused) silentClip.play().catch(() => {});
+  }
+  const c = ctx(); if (!c) return;
+  if (!unlocked) {
+    const s = c.createBufferSource(); s.buffer = c.createBuffer(1, 1, 22050); s.connect(c.destination); s.start(0);
+    try { if ("speechSynthesis" in window) speechSynthesis.speak(new SpeechSynthesisUtterance("")); } catch {}
+    unlocked = true;
+  }
+}
+for (const ev of ["touchend", "pointerup", "click", "keydown"]) document.addEventListener(ev, () => { if (!audio || audio.state !== "running" || (silentClip && silentClip.paused)) unlockAudio(); }, { capture: true, passive: true });
+// In the background: no music, and give the audio session back so nothing keeps playing.
+// Back in front: music resumes (the next touch re-unlocks sound if iOS interrupted it).
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    stopMusic();
+    if (silentClip) silentClip.pause();
+    try { if (navigator.audioSession) navigator.audioSession.type = "auto"; } catch {}
+  } else if (!$("#paint").hidden && $("#praise").hidden) {
+    try { if (navigator.audioSession && state.sound) navigator.audioSession.type = "playback"; } catch {}
+    startMusic();
+  }
+});
 function tone(freq, { dur = 0.45, vol = 0.02, delay = 0, type = "sine", slide = 0 } = {}) {
   if (!state.sound) return;
   const c = ctx(); if (!c) return;
@@ -81,7 +125,9 @@ function tone(freq, { dur = 0.45, vol = 0.02, delay = 0, type = "sine", slide = 
 }
 const popSound = (i) => tone(392 + i * 28, { dur: 0.22, vol: 0.07, slide: 1.6, type: "triangle" });
 function musicStep() {
-  if (!state.sound || $("#paint").hidden) return;
+  if (!state.sound || $("#paint").hidden || document.hidden) return;
+  // While iOS has sound interrupted, time stands still: skip notes instead of piling them up.
+  if (!audio || audio.state !== "running") { musicTimer = setTimeout(musicStep, 560); return; }
   tone(MELODY[note % MELODY.length]);
   if (note % 4 === 0) tone(MELODY[(note + 4) % MELODY.length] / 2, { dur: 0.7, vol: 0.008 });
   note++; musicTimer = setTimeout(musicStep, 560);
@@ -97,7 +143,7 @@ function renderSound() {
 }
 function toggleSound() {
   state.sound = !state.sound; store.set("sound", state.sound); renderSound();
-  if (state.sound) { ctx(); if (!$("#paint").hidden) startMusic(); } else stopMusic();
+  if (state.sound) { unlockAudio(); if (!$("#paint").hidden) startMusic(); } else { stopMusic(); if (silentClip) silentClip.pause(); }
 }
 $("#sound-btn").addEventListener("click", toggleSound);
 $("#home-sound").addEventListener("click", toggleSound);
@@ -128,7 +174,7 @@ function loadImage(src) {
 
 async function openPicture(id) {
   const d = drawings.find((x) => x.id === id); if (!d) return;
-  ctx();                                   // unlock audio inside the tap
+  unlockAudio();                           // unlock audio inside the tap
   const token = ++state.loadToken;
   state.drawing = d; state.page = null;
   if ($("#paint").hidden) {
@@ -173,7 +219,9 @@ function closePicture() {
   state.loadToken++; state.page = null; state.drawing = null;
   $("#paint").hidden = true; $("#praise").hidden = true; document.body.style.overflow = "";
   stopMusic(); cancelHold();
+  if (reloadOnHome) location.reload();
 }
+let reloadOnHome = false;
 // Home button, Esc and the phone's Back button all go through history, so they behave the same.
 const goHome = () => { if (history.state && history.state.paint) history.back(); else closePicture(); };
 window.addEventListener("popstate", () => { if (!$("#paint").hidden) closePicture(); });
@@ -304,4 +352,10 @@ renderTabs(); renderGrid(); renderPalette(); renderSound();
 // Offline + install support. Skipped on localhost so development always sees fresh files.
 if ("serviceWorker" in navigator && (location.hostname !== "localhost" || location.search.includes("sw=1"))) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+  // A new version took over: reload to use it, but never in the middle of colouring (wait for Home).
+  const hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!hadController) return;
+    if ($("#paint").hidden) location.reload(); else reloadOnHome = true;
+  });
 }

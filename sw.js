@@ -1,9 +1,10 @@
 // Service worker: works offline and opens instantly after the first visit.
 // - App files: served from cache, refreshed in the background (stale-while-revalidate).
 // - Pictures (assets/): cache-first; a picture is stored the first time it is opened.
-// Bump VERSION after re-running tools/build.html or changing pictures, so phones fetch new files.
-const VERSION = "v1";
-const SHELL = `bvv-shell-${VERSION}`, ART = `bvv-art-${VERSION}`;
+// Bump APP_VERSION when app code changes, ART_VERSION after re-running tools/build.html or changing
+// pictures, so installed devices fetch the new files (pictures are not re-downloaded for code changes).
+const APP_VERSION = "2", ART_VERSION = "1";
+const SHELL = `bvv-shell-v${APP_VERSION}`, ART = `bvv-art-v${ART_VERSION}`;
 const SHELL_FILES = ["./", "index.html", "styles.css", "app.js", "src/pages.js", "data/drawings.js", "manifest.webmanifest",
   "assets/icons/icon-192.png", "assets/icons/icon-512.png", "assets/icons/apple-touch-icon.png"];
 
