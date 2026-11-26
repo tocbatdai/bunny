@@ -53,22 +53,20 @@
 
   <footer><span>🎨 Bé Vẽ Vui</span><span>Được thiết kế với thật nhiều yêu thương dành cho bé.</span></footer>
 
+  <!-- Full-screen coloring screen: big picture, big colour dots, icon-only buttons (made for toddlers). -->
   <div class="modal" id="color-modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close></div>
-    <section class="coloring-panel" role="dialog" aria-modal="true" aria-labelledby="color-title">
-      <header class="panel-header">
-        <div><span class="eyebrow">TRANH CỦA BÉ</span><h2 id="color-title">Mèo con</h2></div>
-        <div class="panel-head-actions"><button id="music-toggle" class="music-toggle" type="button" aria-pressed="true">🎵 Nhạc: Bật</button><button class="icon-btn close-btn" data-close aria-label="Đóng">✕</button></div>
+    <section class="coloring-screen" role="dialog" aria-modal="true" aria-labelledby="color-title">
+      <header class="screen-bar">
+        <button id="home-btn" class="big-btn home-btn" type="button" aria-label="Về trang chủ" title="Về trang chủ">🏠</button>
+        <h2 id="color-title">Mèo con</h2>
+        <div class="bar-actions">
+          <button id="music-toggle" class="big-btn" type="button" aria-pressed="true" aria-label="Tắt nhạc" title="Nhạc">🎵</button>
+          <button id="reset" class="big-btn" type="button" aria-label="Tô lại từ đầu" title="Tô lại"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="#e65d91" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3 3.5v5h5"/></svg></button>
+        </div>
       </header>
       <div class="coloring-layout">
         <div class="paper-wrap"><div id="drawing" class="drawing" aria-label="Vùng tranh tô màu"></div></div>
-        <aside class="paint-tools">
-          <h3>🎨 Chọn màu</h3>
-          <div class="palette" id="palette"></div>
-          <div class="selected-color"><span id="selected-swatch"></span><span id="selected-name">Màu hồng</span></div>
-          <div class="tool-actions"><button id="reset" class="soft-btn">⟲ Tô lại</button></div>
-          <p class="tip">💡 Bé chạm vào từng vùng trong tranh để tô màu nhé!</p>
-        </aside>
+        <div class="palette" id="palette" role="group" aria-label="Chọn màu"></div>
       </div>
     </section>
   </div>
