@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="whale">
+<rect width="500" height="500" rx="24" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
+<path class="region" data-region="1" d="M75 300 Q95 165 245 175 Q365 175 410 285 Q380 390 230 390 Q105 385 75 300 Z"/><ellipse class="region" data-region="1" cx="270" cy="265" rx="0" ry="0"/><path class="region" data-region="1" d="M385 290 Q445 235 455 260 L420 330 Z"/><path class="region" data-region="1" d="M220 185 Q225 130 280 125 Q275 165 260 185 Z"/><circle class="small" cx="210" cy="235" r="8"/><circle class="small" cx="290" cy="235" r="8"/><path class="line" d="M225 295 Q250 320 275 295"/></svg>

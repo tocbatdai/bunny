@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="apple">
+<rect width="500" height="500" rx="24" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
+<path class="region" data-region="1" d="M250 145 Q180 100 125 170 Q65 315 190 405 Q240 440 250 405 Q260 440 310 405 Q435 315 375 170 Q320 100 250 145 Z"/><path class="line" d="M250 145 Q240 95 280 65"/><path class="region" data-region="1" d="M275 105 Q330 50 360 100 Q325 140 275 105 Z"/></svg>

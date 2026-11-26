@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f2">
+  <meta name="description" content="Bé Vẽ Vui - ứng dụng tô màu vui nhộn dành cho bé.">
+  <title>Bé Vẽ Vui – Thế giới tô màu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Bé Vẽ Vui - Trang chủ">
+      <span class="brand-mark">🎨</span><span><b>Bé Vẽ Vui</b><small>Thế giới sắc màu của bé</small></span>
+    </a>
+    <div class="top-note">🌈 Chơi mà học, tô màu thật vui!</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">GÓC SÁNG TẠO CỦA BÉ</span>
+        <h1>Mỗi ngày một<br><em>bức tranh vui!</em></h1>
+        <p>Chọn hình bé thích, chạm vào tranh và cùng tô màu nhé!</p>
+        <a href="#gallery" class="primary-link">Khám phá tranh <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun">☀️</div><div class="rainbow">🌈</div><div class="cloud cloud-a">☁️</div>
+        <div class="hero-sticker sticker-a">🐰</div><div class="hero-sticker sticker-b">🖍️</div>
+        <div class="hero-sticker sticker-c">🌼</div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-heading">
+        <div><span class="eyebrow">THƯ VIỆN TRANH</span><h2>Bé muốn tô gì hôm nay?</h2></div>
+        <div class="count-pill"><span id="visible-count">60</span> bức tranh</div>
+      </div>
+      <div class="toolbar">
+        <div class="tabs" role="tablist" aria-label="Danh mục tranh">
+          <button class="tab active" data-category="all">✨ Tất cả</button>
+          <button class="tab" data-category="animals">🐻 Động vật</button>
+          <button class="tab" data-category="nature">🌻 Thiên nhiên</button>
+          <button class="tab" data-category="characters">🧸 Nhân vật</button>
+          <button class="tab" data-category="transport">🚗 Giao thông</button>
+        </div>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Tìm tranh..." aria-label="Tìm tranh"></label>
+      </div>
+      <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>Chưa tìm thấy tranh phù hợp. Bé thử từ khóa khác nhé!</p>
+    </section>
+  </main>
+
+  <footer><span>🎨 Bé Vẽ Vui</span><span>Được thiết kế với thật nhiều yêu thương dành cho bé.</span></footer>
+
+  <div class="modal" id="color-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <section class="coloring-panel" role="dialog" aria-modal="true" aria-labelledby="color-title">
+      <header class="panel-header">
+        <div><span class="eyebrow">TRANH CỦA BÉ</span><h2 id="color-title">Mèo con</h2></div>
+        <div class="panel-head-actions"><button id="music-toggle" class="music-toggle" type="button" aria-pressed="true">🎵 Nhạc: Bật</button><button class="icon-btn close-btn" data-close aria-label="Đóng">✕</button></div>
+      </header>
+      <div class="coloring-layout">
+        <div class="paper-wrap"><div id="drawing" class="drawing" aria-label="Vùng tranh tô màu"></div></div>
+        <aside class="paint-tools">
+          <h3>🎨 Chọn màu</h3>
+          <div class="palette" id="palette"></div>
+          <div class="selected-color"><span id="selected-swatch"></span><span id="selected-name">Màu hồng</span></div>
+          <div class="tool-actions"><button id="reset" class="soft-btn">⟲ Tô lại</button></div>
+          <p class="tip">💡 Bé chạm vào từng vùng trong tranh để tô màu nhé!</p>
+        </aside>
+      </div>
+    </section>
+  </div>
+  <div class="celebration" id="celebration" aria-hidden="true"><div class="celebration-backdrop"></div><div class="confetti" id="confetti" aria-hidden="true"></div><section class="celebration-card" role="dialog" aria-modal="true" aria-labelledby="celebration-title"><div class="celebration-stars" aria-hidden="true">⭐ 🌈 ⭐</div><div class="celebration-mascot" aria-hidden="true">🐻</div><h2 id="celebration-title">Giỏi quá!</h2><p id="celebration-message">Bé tô màu đẹp quá! Bé là họa sĩ tài ba!</p><button id="next-picture" class="next-picture">🎨 Tô tranh khác nhé!</button></section></div>
+  <script src="app.js"></script>
+</body>
+</html>

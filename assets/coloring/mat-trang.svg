@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="moon">
+<rect width="500" height="500" rx="24" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
+<path class="region" data-region="1" d="M310 75 Q160 105 160 250 Q165 395 325 405 Q245 315 260 225 Q275 135 365 105 Q340 75 310 75 Z"/><circle class="region" data-region="1" cx="385" cy="155" r="24"/><circle class="region" data-region="1" cx="115" cy="230" r="15"/><circle class="region" data-region="1" cx="390" cy="310" r="14"/></svg>

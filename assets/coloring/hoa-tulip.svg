@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="tulip">
+<rect width="500" height="500" rx="24" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#20202a;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;cursor:pointer}.line{fill:none;stroke:#20202a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.small{fill:#20202a}.thin{fill:none;stroke:#20202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}</style>
+<path class="region" data-region="1" d="M235 280 L235 455 L265 455 L265 280 Z"/><path class="region" data-region="1" d="M250 260 Q145 220 180 115 Q240 120 250 205 Q260 115 325 115 Q360 225 250 260 Z"/><path class="region" data-region="1" d="M235 370 Q160 315 125 365 Q160 420 235 400 Z"/><path class="region" data-region="1" d="M265 400 Q340 315 375 365 Q340 420 265 430 Z"/></svg>
