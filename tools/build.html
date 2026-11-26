@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Bé Vẽ Vui – build assets</title>
+  <style>body{font:15px system-ui,sans-serif;margin:24px;color:#333}button{font:inherit;padding:10px 18px;border-radius:10px;border:0;background:#8d7cf6;color:#fff;cursor:pointer}button:disabled{opacity:.5}pre{background:#f6f3f0;padding:12px;border-radius:10px;height:70vh;overflow:auto}</style>
+</head>
+<body>
+  <h1>Build colouring assets</h1>
+  <p>Chạy qua <code>python tools/dev_server.py</code>. Tạo lại ảnh nhỏ, file vùng tô và icon cho mọi tranh trong <code>data/drawings.js</code>. Thêm <code>?only=id1,id2</code> để build vài tranh.</p>
+  <button id="build">Build</button>
+  <pre id="log"></pre>
+  <script type="module" src="build.js"></script>
+</body>
+</html>

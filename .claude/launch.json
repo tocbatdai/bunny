@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "bunny-static", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "5173", "--directory", "C:/Users/Admin/Downloads/bunny-main/bunny-main"], "port": 5173 }
+    { "name": "bunny-dev", "runtimeExecutable": "python", "runtimeArgs": ["tools/dev_server.py", "5173"], "port": 5173 }
   ]
 }

@@ -2,75 +2,77 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fff7f2">
-  <meta name="description" content="Bé Vẽ Vui - ứng dụng tô màu vui nhộn dành cho bé.">
-  <title>Bé Vẽ Vui – Thế giới tô màu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff4ec">
+  <meta name="description" content="Bé Vẽ Vui – tô màu vui nhộn, đơn giản cho bé từ 2 tuổi.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Bé Vẽ Vui">
+  <title>Bé Vẽ Vui</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <link rel="modulepreload" href="app.js">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#" aria-label="Bé Vẽ Vui - Trang chủ">
-      <span class="brand-mark">🎨</span><span><b>Bé Vẽ Vui</b><small>Thế giới sắc màu của bé</small></span>
-    </a>
-    <div class="top-note">🌈 Chơi mà học, tô màu thật vui!</div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">GÓC SÁNG TẠO CỦA BÉ</span>
-        <h1>Mỗi ngày một<br><em>bức tranh vui!</em></h1>
-        <p>Chọn hình bé thích, chạm vào tranh và cùng tô màu nhé!</p>
-        <a href="#gallery" class="primary-link">Khám phá tranh <span>↓</span></a>
+  <!-- Home: pick a picture -->
+  <div id="home" class="home">
+    <header class="home-bar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">🎨</span><b>Bé Vẽ Vui</b></div>
+      <div class="home-actions">
+        <button id="home-sound" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
+        <button id="fullscreen-btn" class="round-btn" type="button" aria-label="Toàn màn hình" hidden>⛶</button>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="sun">☀️</div><div class="rainbow">🌈</div><div class="cloud cloud-a">☁️</div>
-        <div class="hero-sticker sticker-a">🐰</div><div class="hero-sticker sticker-b">🖍️</div>
-        <div class="hero-sticker sticker-c">🌼</div>
-      </div>
-    </section>
+    </header>
+    <nav id="tabs" class="tabs" aria-label="Chọn loại tranh"></nav>
+    <main id="grid" class="grid" aria-live="polite"></main>
+  </div>
 
-    <section class="gallery-section" id="gallery">
-      <div class="section-heading">
-        <div><span class="eyebrow">THƯ VIỆN TRANH</span><h2>Bé muốn tô gì hôm nay?</h2></div>
-        <div class="count-pill"><span id="visible-count">60</span> bức tranh</div>
+  <!-- Colouring screen (full screen) -->
+  <div id="paint" class="paint" hidden>
+    <header class="paint-bar">
+      <button id="home-btn" class="round-btn home-btn" type="button" aria-label="Về trang chủ">🏠</button>
+      <h1 id="paint-title" class="paint-title"></h1>
+      <div class="paint-actions">
+        <button id="sound-btn" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
+        <button id="undo-btn" class="round-btn" type="button" aria-label="Quay lại bước trước" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg>
+        </button>
+        <button id="reset-btn" class="round-btn reset-btn" type="button" aria-label="Giữ để xóa hết màu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3 3.5v5h5"/></svg>
+          <span class="hold-ring" aria-hidden="true"></span>
+        </button>
       </div>
-      <div class="toolbar">
-        <div class="tabs" role="tablist" aria-label="Danh mục tranh">
-          <button class="tab active" data-category="all">✨ Tất cả</button>
-          <button class="tab" data-category="animals">🐻 Động vật</button>
-          <button class="tab" data-category="nature">🌻 Thiên nhiên</button>
-          <button class="tab" data-category="characters">🧸 Nhân vật</button>
-          <button class="tab" data-category="transport">🚗 Giao thông</button>
-        </div>
-        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Tìm tranh..." aria-label="Tìm tranh"></label>
+    </header>
+    <div class="paint-body">
+      <div id="stage" class="stage">
+        <img id="placeholder" class="placeholder" alt="">
+        <canvas id="canvas" class="page" hidden></canvas>
+        <div id="hint" class="hint" hidden>Giữ nút để xóa hết</div>
       </div>
-      <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
-      <p id="empty-state" class="empty-state" hidden>Chưa tìm thấy tranh phù hợp. Bé thử từ khóa khác nhé!</p>
-    </section>
-  </main>
+      <div id="palette" class="palette" role="radiogroup" aria-label="Chọn màu"></div>
+    </div>
+  </div>
 
-  <footer><span>🎨 Bé Vẽ Vui</span><span>Được thiết kế với thật nhiều yêu thương dành cho bé.</span></footer>
-
-  <!-- Full-screen coloring screen: big picture, big colour dots, icon-only buttons (made for toddlers). -->
-  <div class="modal" id="color-modal" aria-hidden="true">
-    <section class="coloring-screen" role="dialog" aria-modal="true" aria-labelledby="color-title">
-      <header class="screen-bar">
-        <button id="home-btn" class="big-btn home-btn" type="button" aria-label="Về trang chủ" title="Về trang chủ">🏠</button>
-        <h2 id="color-title">Mèo con</h2>
-        <div class="bar-actions">
-          <button id="music-toggle" class="big-btn" type="button" aria-pressed="true" aria-label="Tắt nhạc" title="Nhạc">🎵</button>
-          <button id="reset" class="big-btn" type="button" aria-label="Tô lại từ đầu" title="Tô lại"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="#e65d91" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3 3.5v5h5"/></svg></button>
-        </div>
-      </header>
-      <div class="coloring-layout">
-        <div class="paper-wrap"><div id="drawing" class="drawing" aria-label="Vùng tranh tô màu"></div></div>
-        <div class="palette" id="palette" role="group" aria-label="Chọn màu"></div>
+  <!-- Praise -->
+  <div id="praise" class="praise" hidden>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <section class="praise-card" role="dialog" aria-modal="true" aria-labelledby="praise-title">
+      <div class="praise-mascot" aria-hidden="true">🐻</div>
+      <h2 id="praise-title">Giỏi quá!</h2>
+      <p id="praise-text">Bé tô màu đẹp quá!</p>
+      <div class="praise-actions">
+        <button id="praise-stay" class="round-btn big" type="button" aria-label="Tô tiếp tranh này">🖍️</button>
+        <button id="praise-next" class="round-btn big primary" type="button" aria-label="Tranh khác">➡️</button>
       </div>
     </section>
   </div>
-  <div class="celebration" id="celebration" aria-hidden="true"><div class="celebration-backdrop"></div><div class="confetti" id="confetti" aria-hidden="true"></div><section class="celebration-card" role="dialog" aria-modal="true" aria-labelledby="celebration-title"><div class="celebration-stars" aria-hidden="true">⭐ 🌈 ⭐</div><div class="celebration-mascot" aria-hidden="true">🐻</div><h2 id="celebration-title">Giỏi quá!</h2><p id="celebration-message">Bé tô màu đẹp quá! Bé là họa sĩ tài ba!</p><button id="next-picture" class="next-picture">🎨 Tô tranh khác nhé!</button></section></div>
-  <script src="app.js"></script>
+
+  <script type="module" src="app.js"></script>
 </body>
 </html>
