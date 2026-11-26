@@ -141,26 +141,63 @@ async function buildOne(d) {
   return { areaCount, targets: targets.length, kb: (bin.length / 1024).toFixed(0) };
 }
 
-async function buildIcons() {
-  const make = async (size, pad, file) => {
-    const c = document.createElement("canvas"); c.width = c.height = size;
-    const x = c.getContext("2d"), g = x.createLinearGradient(0, 0, size, size);
-    g.addColorStop(0, "#ffd3de"); g.addColorStop(1, "#d9d0ff");
-    x.fillStyle = g; x.fillRect(0, 0, size, size);
-    x.font = `${Math.round(size * (1 - pad) * 0.72)}px "Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif`;
-    x.textAlign = "center"; x.textBaseline = "middle"; x.fillText("🎨", size / 2, size * 0.54);
-    await put(`assets/icons/${file}`, await canvasBlob(c, "image/png"));
+// App icon: an original bunny face drawn with plain shapes (no emoji font, so it looks the
+// same on every machine). Drawn in a 0..1 box; `zoom` < 1 keeps it inside the maskable safe zone.
+function drawBunny(x, size, zoom) {
+  const INK = "#4a3f55", WHITE = "#ffffff", PINK = "#ffb3c8";
+  const g = x.createLinearGradient(0, 0, size, size);
+  g.addColorStop(0, "#ffd6e2"); g.addColorStop(1, "#d6ccff");
+  x.fillStyle = g; x.fillRect(0, 0, size, size);
+  x.save();
+  x.translate(size / 2, size / 2); x.scale(size * zoom, size * zoom); x.translate(-0.5, -0.47);
+  x.lineJoin = "round"; x.lineCap = "round"; x.strokeStyle = INK;
+  const ellipse = (cx, cy, rx, ry, rot, fill, stroke) => {
+    x.beginPath(); x.ellipse(cx, cy, rx, ry, rot, 0, Math.PI * 2);
+    if (fill) { x.fillStyle = fill; x.fill(); }
+    if (stroke) { x.lineWidth = stroke; x.stroke(); }
   };
-  await make(192, 0.1, "icon-192.png");
-  await make(512, 0.1, "icon-512.png");
-  await make(512, 0.3, "icon-maskable-512.png");
-  await make(180, 0.1, "apple-touch-icon.png");
+  // ears (outer white, inner pink), drawn first so the head covers their base
+  for (const side of [-1, 1]) {
+    const cx = 0.5 + side * 0.125, rot = side * 0.2;
+    ellipse(cx, 0.3, 0.09, 0.21, rot, WHITE, 0.028);
+    ellipse(cx + side * 0.004, 0.31, 0.045, 0.15, rot, PINK);
+  }
+  ellipse(0.5, 0.63, 0.29, 0.245, 0, WHITE, 0.028);          // head
+  for (const side of [-1, 1]) {
+    ellipse(0.5 + side * 0.15, 0.7, 0.055, 0.035, 0, "rgba(255,140,170,.55)"); // cheek
+    ellipse(0.5 + side * 0.095, 0.6, 0.03, 0.036, 0, INK);                     // eye
+    ellipse(0.5 + side * 0.095 + 0.01, 0.588, 0.01, 0.011, 0, WHITE);          // eye shine
+  }
+  x.beginPath(); x.moveTo(0.47, 0.655); x.quadraticCurveTo(0.5, 0.64, 0.53, 0.655); x.quadraticCurveTo(0.5, 0.695, 0.47, 0.655);
+  x.fillStyle = "#ff7fa3"; x.fill(); x.lineWidth = 0.012; x.stroke();      // nose
+  x.beginPath(); x.lineWidth = 0.018;                                          // mouth
+  x.moveTo(0.5, 0.68); x.quadraticCurveTo(0.49, 0.715, 0.46, 0.71);
+  x.moveTo(0.5, 0.68); x.quadraticCurveTo(0.51, 0.715, 0.54, 0.71);
+  x.stroke();
+  x.restore();
+}
+
+async function buildIcons() {
+  const make = async (size, zoom, file) => {
+    const c = document.createElement("canvas"); c.width = c.height = size;
+    drawBunny(c.getContext("2d"), size, zoom);
+    await put(`assets/icons/${file}`, await canvasBlob(c, "image/png"));
+    return c;
+  };
+  const preview = await make(512, 0.92, "icon-512.png");
+  await make(192, 0.92, "icon-192.png");
+  await make(512, 0.72, "icon-maskable-512.png");   // Android crops to a circle: keep the bunny inside 80%
+  await make(180, 0.92, "apple-touch-icon.png");
+  await make(64, 0.95, "favicon-64.png");
+  preview.style.cssText = "width:160px;border-radius:32px;display:block;margin:10px 0";
+  document.querySelector("#log").before(preview);
 }
 
 document.querySelector("#build").addEventListener("click", async (e) => {
   e.target.disabled = true;
   const only = new URLSearchParams(location.search).get("only");
-  const list = only ? drawings.filter((d) => only.split(",").includes(d.id)) : drawings;
+  const iconsOnly = new URLSearchParams(location.search).has("icons");   // ?icons = only redraw the app icons
+  const list = iconsOnly ? [] : only ? drawings.filter((d) => only.split(",").includes(d.id)) : drawings;
   const t0 = performance.now(), summary = [];
   try {
     await buildIcons(); log("icons ok");

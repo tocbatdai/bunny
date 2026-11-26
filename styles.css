@@ -43,7 +43,7 @@ button:focus-visible { outline: 4px solid var(--accent); outline-offset: 3px; }
 .home { min-height: 100%; padding: max(12px, env(safe-area-inset-top)) var(--gap) max(24px, env(safe-area-inset-bottom)); }
 .home-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 1200px; margin: 0 auto 14px; }
 .brand { display: flex; align-items: center; gap: 10px; font-size: clamp(22px, 5vw, 30px); font-weight: 900; }
-.brand-mark { width: 52px; height: 52px; border-radius: 18px; background: #ffe1e9; display: grid; place-items: center; font-size: 30px; }
+.brand-mark { width: 52px; height: 52px; border-radius: 16px; display: block; }
 .home-actions { display: flex; gap: 10px; }
 .home-actions .round-btn { width: 52px; height: 52px; font-size: 24px; }
 
