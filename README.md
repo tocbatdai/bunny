@@ -10,7 +10,7 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 | 🎨 Vẽ Vui | Bé Vẽ Vui (tô màu) | Có |
 | 🧩 Ghép Hình | Bé Ghép Hình | Có |
 | 🦒 Vườn Thú | Bé Học Nhận Biết | Có |
-| 🎵 Âm Nhạc | Bé Khám Phá Âm Thanh | Sắp có |
+| 🎵 Âm Nhạc | Bé Khám Phá Âm Thanh | Có |
 | 📖 Kể Chuyện | Bé Nghe Kể Chuyện | Sắp có |
 
 ### Bé Ghép Hình
@@ -22,6 +22,12 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 - 20 con vật vẽ màu: mèo, chó, gà, vịt, bò, lợn, voi, khỉ, ếch, cá, rùa, chim cánh cụt, cá chép, cá hề, cá nóc, cá vàng, sao biển, rồng, hổ, cá đuối. 8 con sau cũng có bản tranh tô màu (nhóm Động vật).
 - Chạm con vật thì nó nhảy lên và giọng đọc tên kèm tiếng kêu ("Con mèo. Meo meo!").
 - Nút 🎯 **Tìm con vật**: giọng hỏi "Con vịt đâu?". Lúc đầu 2 lựa chọn, đúng 3 lần thì 3 lựa chọn, đúng 8 lần thì 4. Chọn sai thì giọng nói tên con bé vừa chạm rồi hỏi lại. Nút 👂 nghe lại câu hỏi. Cứ đúng 5 lần thì có lời khen.
+
+### Bé Khám Phá Âm Thanh (Âm Nhạc)
+- 🎹 **Đàn**: 8 thanh xylophone cầu vồng (Đô đến Đô cao). Chạm nhiều ngón cùng lúc được, vuốt ngang qua các thanh thì đàn kêu liên tiếp. Tiếng đàn tổng hợp bằng Web Audio, không cần file âm thanh.
+  - 🎵 chơi tự do; ⭐ 🐑 🐮 là 3 bài (giai điệu dân gian đã hết bản quyền, chỉ có nhạc, không có lời): thanh cần chạm tiếp theo sáng lên, chạm đúng thì bài đi tiếp, chạm sai vẫn có tiếng. Nút 👂 nghe bài mẫu. Chơi hết bài thì có lời khen.
+- 🎤 **Mic vui**: bạn thú trên sân khấu nhảy theo giọng bé, đèn sáng và sao bay khi bé hát to (chạm bạn thú để đổi bạn khác). Nút 🔴 thu 5 giây rồi nghe lại bằng 🙂 giọng bé, 🐭 giọng chuột, 🐻 giọng gấu, 🏔️ giọng vọng.
+  - Cần cho phép dùng micro. Tiếng chỉ nằm trong máy, không gửi đi, không lưu lại; micro tắt ngay khi thu xong và khi rời màn hình.
 
 ### Bé Vẽ Vui
 - Chạm vào tranh là mở màn tô toàn màn hình. Nút 🏠 to ở góc trái để về trang chủ (nút Back của điện thoại cũng được).
@@ -40,11 +46,12 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 |---|---|
 | `index.html`, `styles.css` | Giao diện |
 | `app.js` | Khung app: nút dùng chung, router, offline |
-| `src/router.js` | Router theo hash: `#/` (trang chủ thế giới), `#/ve` và `#/ve/<id>` (tô màu), `#/ghep-hinh` và `#/ghep-hinh/<id>` (ghép hình), `#/nhan-biet` và `#/nhan-biet/tim` (vườn thú). Mỗi khu tải lần đầu khi bé vào |
+| `src/router.js` | Router theo hash: `#/` (trang chủ thế giới), `#/ve` và `#/ve/<id>` (tô màu), `#/ghep-hinh` và `#/ghep-hinh/<id>` (ghép hình), `#/nhan-biet` và `#/nhan-biet/tim` (vườn thú), `#/am-nhac`, `#/am-nhac/dan`, `#/am-nhac/mic` (âm nhạc). Mỗi khu tải lần đầu khi bé vào |
 | `src/shared/` | Dùng chung cho mọi khu: âm thanh và nhạc, giọng đọc tiếng Việt, màn khen, lưu dữ liệu |
 | `src/zones/hub/` | Trang chủ: cảnh thế giới SVG (bố cục ngang và dọc) và danh sách ngôi nhà trong `world.js` |
 | `src/zones/ve/` | Khu tô màu (Bé Vẽ Vui) |
 | `src/zones/nhan-biet/` | Khu Vườn Thú. Hình con vật là SVG vẽ trong `animals.js` (thêm con mới: thêm một mục vào danh sách) |
+| `src/zones/am-nhac/` | Khu Âm Nhạc: đàn và các bài trong `am-nhac.js`, Mic vui trong `mic.js` |
 | `src/zones/ghep-hinh/` | Khu ghép hình. Tranh màu được vẽ ngay trên máy từ nét vẽ và file vùng tô (`src/shared/picture.js`) |
 | `src/pages.js` | Định dạng file vùng tô (dùng chung cho app và công cụ build) |
 | `data/drawings.js` | Danh sách tranh và danh mục |

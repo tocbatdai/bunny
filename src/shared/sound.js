@@ -55,6 +55,24 @@ export function tone(freq, { dur = 0.45, vol = 0.02, delay = 0, type = "sine", s
   g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
   o.connect(g); g.connect(c.destination); o.start(t); o.stop(t + dur + 0.05);
 }
+// The shared AudioContext (created on first use), for zones that build their own audio graph.
+export const audioContext = () => ctx();
+
+// A xylophone-like note: a sine with two quickly fading overtones.
+export function pling(freq, { vol = 0.2, dur = 1.3 } = {}) {
+  if (!on) return;
+  const c = ctx(); if (!c) return;
+  const t = c.currentTime, out = c.createGain();
+  out.gain.setValueAtTime(0.0001, t); out.gain.exponentialRampToValueAtTime(vol, t + 0.006); out.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  out.connect(c.destination);
+  for (const [mult, gain, decay] of [[1, 1, dur], [3.98, 0.28, 0.35], [9.2, 0.08, 0.12]]) {
+    const o = c.createOscillator(), g = c.createGain();
+    o.type = "sine"; o.frequency.value = freq * mult;
+    g.gain.setValueAtTime(gain, t); g.gain.exponentialRampToValueAtTime(0.0001, t + decay);
+    o.connect(g); g.connect(out); o.start(t); o.stop(t + dur + 0.05);
+  }
+}
+
 export const fanfare = () => [659.25, 783.99, 987.77, 1318.51].forEach((f, i) => tone(f, { dur: 0.3, vol: 0.05, delay: i * 0.12 }));
 
 /* ----------------------------------------------------------------- music */

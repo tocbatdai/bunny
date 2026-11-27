@@ -3,13 +3,14 @@
 // - Pictures (assets/): cache-first; a picture is stored the first time it is opened.
 // Bump APP_VERSION when app code changes, ART_VERSION after re-running tools/build.html or changing
 // pictures, so installed devices fetch the new files (pictures are not re-downloaded for code changes).
-const APP_VERSION = "11", ART_VERSION = "3";
+const APP_VERSION = "12", ART_VERSION = "3";
 const SHELL = `bvv-shell-v${APP_VERSION}`, ART = `bvv-art-v${ART_VERSION}`;
 // Every code module is listed, zones included, so all zones also work offline.
 const SHELL_FILES = ["./", "index.html", "styles.css", "app.js", "src/router.js", "src/pages.js",
   "src/shared/dom.js", "src/shared/sound.js", "src/shared/voice.js", "src/shared/praise.js", "src/shared/picture.js",
   "src/zones/hub/hub.js", "src/zones/hub/world.js", "src/zones/ve/ve.js", "src/zones/ghep-hinh/ghep-hinh.js",
-  "src/zones/nhan-biet/nhan-biet.js", "src/zones/nhan-biet/animals.js", "data/drawings.js", "manifest.webmanifest",
+  "src/zones/nhan-biet/nhan-biet.js", "src/zones/nhan-biet/animals.js",
+  "src/zones/am-nhac/am-nhac.js", "src/zones/am-nhac/mic.js", "data/drawings.js", "manifest.webmanifest",
   "assets/icons/icon-192.png", "assets/icons/icon-512.png", "assets/icons/apple-touch-icon.png"];
 
 self.addEventListener("install", (e) => {

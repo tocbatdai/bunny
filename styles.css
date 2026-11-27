@@ -195,6 +195,76 @@ button:focus-visible { outline: 4px solid var(--accent); outline-offset: 3px; }
 .card.choice.right { box-shadow: 0 0 0 6px #8bc34a, 0 5px 0 6px #6a9f35; }
 .card.choice.faded { opacity: .35; transform: scale(.92); }
 
+/* ---------- music: menu ---------- */
+.music-menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; max-width: 760px; margin: 10px auto 0; }
+.music-pick {
+  display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 18px; border: 0; border-radius: 30px;
+  background: var(--card); box-shadow: 0 6px 0 var(--shadow); cursor: pointer; touch-action: manipulation; font-size: 26px; font-weight: 900;
+}
+.music-pick svg { width: 100%; max-width: 260px; height: auto; }
+.music-pick:active { transform: translateY(3px); box-shadow: 0 3px 0 var(--shadow); }
+
+/* ---------- music: xylophone ---------- */
+.song-picks { flex: 1; min-width: 0; display: flex; justify-content: center; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.song-pick { min-height: 52px; padding: 0 14px; font-size: 28px; }
+#xylo-listen.playing { background: var(--accent); box-shadow: 0 5px 0 var(--accent-dark); }
+.xylo-area { flex: 1; min-height: 0; position: relative; touch-action: none; user-select: none; -webkit-user-select: none; }
+.xylo-keys { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 2%; padding: 2% 3%; }
+.xylo-keys::before, .xylo-keys::after { content: ""; position: absolute; left: 2%; right: 2%; height: 14px; border-radius: 7px; background: #a1704a; z-index: 0; }
+.xylo-keys::before { top: 24%; transform: rotate(1.2deg); }
+.xylo-keys::after { bottom: 24%; transform: rotate(-1.2deg); }
+.bar {
+  position: relative; z-index: 1; flex: none; width: 10%; height: calc(94% - var(--i) * 6%); padding: 0; border: 4px solid var(--ink);
+  border-radius: 18px; background: var(--c); box-shadow: inset 0 -10px 0 #00000022, 0 5px 0 #00000026; cursor: pointer; touch-action: none;
+}
+.bar::before, .bar::after { content: ""; position: absolute; left: 50%; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: #ffffffcc; box-shadow: 0 0 0 3px #4a3f5544; }
+.bar::before { top: 14%; } .bar::after { bottom: 14%; }
+.bar.hit { animation: bar-hit .35s cubic-bezier(.3, 1.6, .5, 1); }
+.song-mode .bar { filter: saturate(.35) brightness(1.12); }
+.song-mode .bar.next { filter: none; box-shadow: 0 0 0 6px #fff, 0 0 0 10px var(--c), 0 8px 18px #4a3f5555; animation: glow 1s ease-in-out infinite alternate; }
+.song-mode .bar.next.hit { animation: bar-hit .35s cubic-bezier(.3, 1.6, .5, 1); }
+@keyframes bar-hit { 40% { transform: scale(.94, .97) translateY(4px); } }
+@keyframes glow { to { transform: scale(1.04); } }
+.note-fly { position: absolute; z-index: 3; margin: -24px 0 0 -14px; font-size: 44px; font-weight: 900; pointer-events: none; text-shadow: 0 2px 0 #fff; animation: note-fly 1.1s ease-out forwards; }
+@keyframes note-fly { from { transform: translateY(0) scale(.6); opacity: 1; } to { transform: translateY(-140px) rotate(-18deg) scale(1.2); opacity: 0; } }
+/* portrait: bars lie across the screen, longest on top; the song buttons get their own row */
+@media (orientation: portrait) {
+  .xylo .paint-bar { flex-wrap: wrap; justify-content: space-between; }
+  .xylo .song-picks { order: 3; flex-basis: 100%; }
+  .xylo-keys { flex-direction: column; gap: 1.6%; padding: 3% 2%; }
+  .xylo-keys::before, .xylo-keys::after { top: 2%; bottom: 2%; left: auto; right: auto; width: 14px; height: auto; }
+  .xylo-keys::before { left: 24%; } .xylo-keys::after { right: 24%; }
+  .bar { width: calc(94% - var(--i) * 6%); height: 10%; }
+  .bar::before, .bar::after { top: 50%; bottom: auto; left: auto; margin: -6px 0 0; }
+  .bar::before { left: 12%; } .bar::after { right: 12%; }
+}
+
+/* ---------- music: fun mic ---------- */
+.mic-screen { background: #3b2e5a; color: #fff; }
+.mic-screen .paint-title { color: #fff; }
+.mic-stage { --lvl: 0; flex: 1; min-height: 0; position: relative; overflow: hidden; border-radius: 24px; background: radial-gradient(ellipse at 50% 30%, #6a4fa3, #2c2145 70%); }
+.mic-stage .spot { position: absolute; left: 50%; top: -10%; width: 70%; height: 120%; transform: translateX(-50%); background: radial-gradient(ellipse at 50% 85%, #fff6c8, transparent 60%); opacity: calc(.25 + var(--lvl) * .75); }
+.curtain { position: absolute; top: 0; bottom: 0; width: 16%; background: repeating-linear-gradient(90deg, #c62f4f 0 18px, #a8243f 18px 30px); box-shadow: inset 0 -30px 40px #0004; }
+.curtain.left { left: 0; border-bottom-right-radius: 60% 30%; }
+.curtain.right { right: 0; border-bottom-left-radius: 60% 30%; }
+.stage-floor { position: absolute; left: 0; right: 0; bottom: 0; height: 16%; background: linear-gradient(#a1704a, #7a5232); }
+.mic-star {
+  position: absolute; left: 50%; bottom: 10%; width: min(46%, 50vh); aspect-ratio: 1; padding: 0; border: 0; background: none; cursor: pointer; z-index: 2;
+  transform-origin: 50% 100%; transform: translateX(-50%) translateY(calc(var(--lvl) * -16%)) scale(calc(1 + var(--lvl) * .22), calc(1 + var(--lvl) * .3));
+  transition: transform .06s linear; touch-action: manipulation;
+}
+.mic-star svg { width: 100%; height: 100%; display: block; }
+.mic-sparkles { position: absolute; inset: 0; pointer-events: none; z-index: 3; }
+.mic-sparkles span { position: absolute; bottom: 30%; font-size: 34px; animation: sparkle 1.3s ease-out forwards; }
+@keyframes sparkle { from { transform: translateY(0) scale(.5); opacity: 1; } to { transform: translateY(-220px) scale(1.2) rotate(30deg); opacity: 0; } }
+.mic-controls { flex: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; padding: 6px; }
+.rec-btn { background: #fff; }
+.rec-btn.recording { animation: glow .5s ease-in-out infinite alternate; }
+.rec-btn .rec-ring { position: absolute; inset: -7px; border-radius: 50%; background: conic-gradient(#ef5350 calc(var(--p, 0) * 1turn), #ffffff33 0); -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 7px), #000 calc(100% - 6px)); mask: radial-gradient(farthest-side, transparent calc(100% - 7px), #000 calc(100% - 6px)); }
+.voice-btn.playing { box-shadow: 0 0 0 5px #ffd54f, 0 6px 0 5px #c9a227; }
+.mic-msg { flex: none; margin: 0; text-align: center; font-size: 20px; }
+@media (orientation: landscape) and (max-height: 560px) { .mic-controls .round-btn.big { width: 64px; height: 64px; font-size: 30px; } }
+
 /* ---------- praise ---------- */
 .praise { position: fixed; inset: 0; z-index: 30; display: flex; align-items: center; justify-content: center; padding: 18px; background: rgba(60, 45, 75, .55); }
 .praise-card { position: relative; z-index: 2; width: min(420px, 94vw); padding: 28px 22px 26px; border-radius: 32px; background: #fffaf7; text-align: center; animation: pop .4s cubic-bezier(.2, 1.4, .4, 1) both; }
