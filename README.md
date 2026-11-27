@@ -21,7 +21,7 @@ Web app tĩnh (HTML/CSS/JS thuần, không cần backend, không cần cài pack
 | `src/pages.js` | Định dạng file vùng tô (dùng chung cho app và công cụ build) |
 | `data/drawings.js` | Danh sách tranh và danh mục |
 | `assets/coloring/` | Tranh gốc (SVG/PNG) |
-| `assets/pages/` | **Sinh tự động**: nét vẽ PNG cho tranh SVG + file vùng tô `.bin` |
+| `assets/pages/` | **Sinh tự động**: nét vẽ PNG đã làm sạch (tranh SVG được vẽ ra; tranh PNG được làm nét, bỏ khung cũ, thêm khung mới nếu bị cắt mép) + file vùng tô `.bin` |
 | `assets/thumbs/` | **Sinh tự động**: ảnh nhỏ WebP cho trang chủ |
 | `assets/icons/` | **Sinh tự động**: icon ứng dụng |
 | `sw.js`, `manifest.webmanifest` | Chạy offline và cài như ứng dụng |

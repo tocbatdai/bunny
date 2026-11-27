@@ -10,7 +10,7 @@
 export const PAGE_MAGIC = "BVV1";
 
 export const pagePaths = (d) => ({
-  art: d.src.endsWith(".png") ? d.src : `assets/pages/${d.id}.png`,
+  art: `assets/pages/${d.id}.png`,   // cleaned line art written by tools/build.html (never the raw source)
   areas: `assets/pages/${d.id}.bin`,
   thumb: `assets/thumbs/${d.id}.webp`,
 });
