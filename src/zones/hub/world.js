@@ -7,7 +7,7 @@
 export const HOUSES = [
   { id: "ve", label: "Vẽ Vui", say: "Bé Vẽ Vui", route: "ve" },
   { id: "ghep-hinh", label: "Ghép Hình", say: "Bé Ghép Hình", route: "ghep-hinh" },
-  { id: "nhan-biet", label: "Vườn Thú", say: "Vườn thú. Sắp có rồi!", route: null },
+  { id: "nhan-biet", label: "Vườn Thú", say: "Vườn thú", route: "nhan-biet" },
   { id: "am-nhac", label: "Âm Nhạc", say: "Nhà âm nhạc. Sắp có rồi!", route: null },
   { id: "ke-chuyen", label: "Kể Chuyện", say: "Thư viện kể chuyện. Sắp có rồi!", route: null },
 ];

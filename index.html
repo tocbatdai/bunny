@@ -71,6 +71,31 @@
     </div>
   </div>
 
+  <!-- Bé Học Nhận Biết: the zoo, tap an animal to hear it -->
+  <div id="zoo" class="home" hidden>
+    <header class="home-bar">
+      <div class="brand"><button id="zoo-home-btn" class="round-btn home-btn" type="button" aria-label="Về Thế Giới Của Bé">🏠</button><b>Vườn Thú</b></div>
+      <div class="home-actions">
+        <button id="zoo-sound" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
+      </div>
+    </header>
+    <button id="zoo-play" class="play-btn" type="button"><span aria-hidden="true">🎯</span> Tìm con vật</button>
+    <main id="zoo-grid" class="grid zoo-grid"></main>
+  </div>
+
+  <!-- Find the animal game (full screen) -->
+  <div id="quiz" class="paint quiz" hidden>
+    <header class="paint-bar">
+      <button id="quiz-back" class="round-btn home-btn" type="button" aria-label="Về vườn thú">🏠</button>
+      <h1 id="quiz-question" class="paint-title"></h1>
+      <div class="paint-actions">
+        <button id="quiz-repeat" class="round-btn" type="button" aria-label="Nghe lại câu hỏi">👂</button>
+        <button id="quiz-sound" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
+      </div>
+    </header>
+    <div id="quiz-area" class="quiz-area"></div>
+  </div>
+
   <!-- Colouring screen (full screen) -->
   <div id="paint" class="paint" hidden>
     <header class="paint-bar">
