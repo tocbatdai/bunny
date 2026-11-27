@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="kitten birthday party">
+<rect width="500" height="500" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#24202b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#24202b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#24202b}</style>
+<path class="region" data-region="1" d="M205 382C266 392 292 336 266 298C258 286 240 290 247 304C264 334 246 362 205 362Z"/>
+<ellipse class="region" data-region="1" cx="150" cy="330" rx="68" ry="72"/>
+<ellipse class="region" data-region="1" cx="150" cy="348" rx="38" ry="42"/>
+<ellipse class="region" data-region="1" cx="122" cy="400" rx="25" ry="14"/>
+<ellipse class="region" data-region="1" cx="178" cy="400" rx="25" ry="14"/>
+<path class="line" d="M114 396L114 406M130 396L130 406M170 396L170 406M186 396L186 406"/>
+<path class="region" data-region="1" d="M74 176L80 96Q84 86 94 92L142 128Z"/>
+<path class="region" data-region="1" d="M226 176L220 96Q216 86 206 92L158 128Z"/>
+<ellipse class="region" data-region="1" cx="150" cy="205" rx="92" ry="78"/>
+<path class="region" data-region="1" d="M92 150L93 112L124 134Z"/>
+<path class="region" data-region="1" d="M208 150L207 112L176 134Z"/>
+<path class="line" d="M136 142L139 160M150 140L150 160M164 142L161 160"/>
+<ellipse class="dot" cx="115" cy="204" rx="13" ry="16"/>
+<circle fill="#fff" cx="119" cy="198" r="5"/>
+<ellipse class="dot" cx="185" cy="204" rx="13" ry="16"/>
+<circle fill="#fff" cx="189" cy="198" r="5"/>
+<ellipse class="region" data-region="1" cx="94" cy="236" rx="15" ry="9"/>
+<ellipse class="region" data-region="1" cx="206" cy="236" rx="15" ry="9"/>
+<path class="dot" d="M141 223Q150 218 159 223Q154 233 150 233Q146 233 141 223Z"/>
+<path class="line" d="M132 240Q141 252 150 240Q159 252 168 240"/>
+<path class="line" d="M66 222L36 214M66 234L38 240M234 222L264 214M234 234L262 240"/>
+<path class="region" data-region="1" d="M116 134L150 50L184 134Q150 144 116 134Z"/>
+<circle class="region" data-region="1" cx="141" cy="116" r="7"/>
+<circle class="region" data-region="1" cx="160" cy="96" r="7"/>
+<circle class="region" data-region="1" cx="164" cy="124" r="7"/>
+<circle class="region" data-region="1" cx="149" cy="76" r="7"/>
+<path class="region" data-region="1" d="M150 29L154.2 38.2L164.3 39.4L156.8 46.2L158.8 56.1L150 51.2L141.2 56.1L143.2 46.2L135.7 39.4L145.8 38.2Z"/>
+<ellipse class="region" data-region="1" cx="362" cy="428" rx="112" ry="16"/>
+<path class="region" data-region="1" d="M280 335L444 335Q454 335 454 345L454 416Q454 426 444 426L280 426Q270 426 270 416L270 345Q270 335 280 335Z"/>
+<path class="region" data-region="1" d="M270 360L270 345Q270 335 280 335L444 335Q454 335 454 345L454 360Q442.5 374 431 360Q419.5 374 408 360Q396.5 374 385 360Q373.5 374 362 360Q350.5 374 339 360Q327.5 374 316 360Q304.5 374 293 360Q281.5 374 270 360Z"/>
+<path class="region" data-region="1" d="M315 404C299 396 305.5 383.5 315 391.5C324.5 383.5 331 396 315 404Z"/>
+<path class="region" data-region="1" d="M362 404C346 396 352.5 383.5 362 391.5C371.5 383.5 378 396 362 404Z"/>
+<path class="region" data-region="1" d="M409 404C393 396 399.5 383.5 409 391.5C418.5 383.5 425 396 409 404Z"/>
+<path class="region" data-region="1" d="M305 280L419 280Q429 280 429 290L429 328Q429 338 419 338L305 338Q295 338 295 328L295 290Q295 280 305 280Z"/>
+<path class="region" data-region="1" d="M295 300L295 290Q295 280 305 280L419 280Q429 280 429 290L429 300Q417.8 314 406.7 300Q395.5 314 384.3 300Q373.2 314 362 300Q350.8 314 339.7 300Q328.5 314 317.3 300Q306.2 314 295 300Z"/>
+<path class="region" data-region="1" d="M331 190L339 190Q342 190 342 193L342 237Q342 240 339 240L331 240Q328 240 328 237L328 193Q328 190 331 190Z"/>
+<path class="region" data-region="1" d="M335 154Q347 172 335 184Q323 172 335 154Z"/>
+<path class="region" data-region="1" d="M358 190L366 190Q369 190 369 193L369 237Q369 240 366 240L358 240Q355 240 355 237L355 193Q355 190 358 190Z"/>
+<path class="region" data-region="1" d="M362 154Q374 172 362 184Q350 172 362 154Z"/>
+<path class="region" data-region="1" d="M385 190L393 190Q396 190 396 193L396 237Q396 240 393 240L385 240Q382 240 382 237L382 193Q382 190 385 190Z"/>
+<path class="region" data-region="1" d="M389 154Q401 172 389 184Q377 172 389 154Z"/>
+<path class="region" data-region="1" d="M328 232L396 232Q406 232 406 242L406 273Q406 283 396 283L328 283Q318 283 318 273L318 242Q318 232 328 232Z"/>
+<path class="region" data-region="1" d="M318 250L318 242Q318 232 328 232L396 232Q406 232 406 242L406 250Q395 264 384 250Q373 264 362 250Q351 264 340 250Q329 264 318 250Z"/>
+<path class="line" d="M306 170L318 178M300 200L314 202M418 170L406 178M424 200L410 202M362 128L362 142"/>
+<path class="region" data-region="1" d="M16 416L88 416Q92 416 92 420L92 470Q92 474 88 474L16 474Q12 474 12 470L12 420Q12 416 16 416Z"/>
+<path class="region" data-region="1" d="M46 416L58 416Q59 416 59 417L59 473Q59 474 58 474L46 474Q45 474 45 473L45 417Q45 416 46 416Z"/>
+<path class="region" data-region="1" d="M10 400L94 400Q98 400 98 404L98 414Q98 418 94 418L10 418Q6 418 6 414L6 404Q6 400 10 400Z"/>
+<path class="region" data-region="1" d="M46 400L58 400Q59 400 59 401L59 417Q59 418 58 418L46 418Q45 418 45 417L45 401Q45 400 46 400Z"/>
+<ellipse class="region" data-region="1" cx="36" cy="389" rx="17" ry="10" transform="rotate(-20 36 389)"/>
+<ellipse class="region" data-region="1" cx="68" cy="389" rx="17" ry="10" transform="rotate(20 68 389)"/>
+<circle class="region" data-region="1" cx="52" cy="393" r="8"/>
+<path class="region" data-region="1" d="M218 426L290 426Q294 426 294 430L294 474Q294 478 290 478L218 478Q214 478 214 474L214 430Q214 426 218 426Z"/>
+<path class="region" data-region="1" d="M248 426L260 426Q261 426 261 427L261 477Q261 478 260 478L248 478Q247 478 247 477L247 427Q247 426 248 426Z"/>
+<path class="region" data-region="1" d="M212 410L296 410Q300 410 300 414L300 424Q300 428 296 428L212 428Q208 428 208 424L208 414Q208 410 212 410Z"/>
+<path class="region" data-region="1" d="M248 410L260 410Q261 410 261 411L261 427Q261 428 260 428L248 428Q247 428 247 427L247 411Q247 410 248 410Z"/>
+<ellipse class="region" data-region="1" cx="238" cy="399" rx="17" ry="10" transform="rotate(-20 238 399)"/>
+<ellipse class="region" data-region="1" cx="270" cy="399" rx="17" ry="10" transform="rotate(20 270 399)"/>
+<circle class="region" data-region="1" cx="254" cy="403" r="8"/>
+<path class="region" data-region="1" d="M40 37L45.1 48L57.1 49.4L48.2 57.7L50.6 69.6L40 63.6L29.4 69.6L31.8 57.7L22.9 49.4L34.9 48Z"/>
+<path class="region" data-region="1" d="M255 39L259.5 48.8L270.2 50.1L262.3 57.4L264.4 67.9L255 62.7L245.6 67.9L247.7 57.4L239.8 50.1L250.5 48.8Z"/>
+<path class="region" data-region="1" d="M318 86L321.9 94.6L331.3 95.7L324.4 102.1L326.2 111.3L318 106.7L309.8 111.3L311.6 102.1L304.7 95.7L314.1 94.6Z"/>
+<path class="region" data-region="1" d="M455 62L460.1 73L472.1 74.4L463.2 82.7L465.6 94.6L455 88.6L444.4 94.6L446.8 82.7L437.9 74.4L449.9 73Z"/>
+<path class="region" data-region="1" d="M470 186L473.9 194.6L483.3 195.7L476.4 202.1L478.2 211.3L470 206.7L461.8 211.3L463.6 202.1L456.7 195.7L466.1 194.6Z"/>
+<path class="region" data-region="1" d="M28 285L32.2 294.2L42.3 295.4L34.8 302.2L36.8 312.1L28 307.2L19.2 312.1L21.2 302.2L13.7 295.4L23.8 294.2Z"/>
+<path class="region" data-region="1" d="M472 278L475.9 286.6L485.3 287.7L478.4 294.1L480.2 303.3L472 298.7L463.8 303.3L465.6 294.1L458.7 287.7L468.1 286.6Z"/>
+<path class="region" data-region="1" d="M158 444A8 8 0 1 1 169.4 452.3A8 8 0 1 1 165.1 465.7A8 8 0 1 1 150.9 465.7A8 8 0 1 1 146.6 452.3A8 8 0 1 1 158 444Z"/>
+<circle class="region" data-region="1" cx="158" cy="456" r="5"/>
+<path class="region" data-region="1" d="M330 458A8 8 0 1 1 341.4 466.3A8 8 0 1 1 337.1 479.7A8 8 0 1 1 322.9 479.7A8 8 0 1 1 318.6 466.3A8 8 0 1 1 330 458Z"/>
+<circle class="region" data-region="1" cx="330" cy="470" r="5"/>
+<path class="region" data-region="1" d="M462 456A8 8 0 1 1 473.4 464.3A8 8 0 1 1 469.1 477.7A8 8 0 1 1 454.9 477.7A8 8 0 1 1 450.6 464.3A8 8 0 1 1 462 456Z"/>
+<circle class="region" data-region="1" cx="462" cy="468" r="5"/>
+<path class="line" d="M120 488L126 476L132 488M258 494L262 484L266 494M392 488L398 476L404 488M18 492L22 482L26 492"/>
+</svg>

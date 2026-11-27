@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="happy turtle">
+<rect width="500" height="500" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#24202b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#24202b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#24202b}</style>
+<path class="region" data-region="1" d="M418 318L462 296Q470 300 462 310L432 346Z"/>
+<ellipse class="region" data-region="1" cx="182" cy="398" rx="30" ry="34"/>
+<path class="line" d="M171 431L171 418M193 431L193 418"/>
+<ellipse class="region" data-region="1" cx="300" cy="412" rx="30" ry="34"/>
+<path class="line" d="M289 445L289 432M311 445L311 432"/>
+<ellipse class="region" data-region="1" cx="398" cy="396" rx="30" ry="34"/>
+<path class="line" d="M387 429L387 416M409 429L409 416"/>
+<path class="region" data-region="1" d="M150 338C150 96 400 86 412 338Z"/>
+<path class="region" data-region="1" d="M134 330Q276 306 426 330Q434 350 420 366Q276 346 142 368Q124 350 134 330Z"/>
+<path class="line" d="M190 326L192 360M240 319L240 353M290 317L289 350M340 319L338 352M390 324L387 358"/>
+<ellipse class="region" data-region="1" cx="280" cy="205" rx="36" ry="26"/>
+<ellipse class="region" data-region="1" cx="280" cy="205" rx="18" ry="13"/>
+<ellipse class="region" data-region="1" cx="208" cy="268" rx="28" ry="30"/>
+<ellipse class="region" data-region="1" cx="208" cy="268" rx="14" ry="15"/>
+<ellipse class="region" data-region="1" cx="352" cy="268" rx="28" ry="30"/>
+<ellipse class="region" data-region="1" cx="352" cy="268" rx="14" ry="15"/>
+<ellipse class="region" data-region="1" cx="280" cy="292" rx="26" ry="15"/>
+<ellipse class="region" data-region="1" cx="280" cy="292" rx="13" ry="7.5"/>
+<ellipse class="region" data-region="1" cx="222" cy="206" rx="14" ry="16"/>
+<ellipse class="region" data-region="1" cx="338" cy="206" rx="14" ry="16"/>
+<circle class="region" data-region="1" cx="112" cy="282" r="66"/>
+<path class="line" d="M84 276Q94 262 104 276M122 276Q132 262 142 276"/>
+<path class="line" d="M100 300Q113 314 126 300"/>
+<ellipse class="region" data-region="1" cx="78" cy="300" rx="10" ry="7"/>
+<ellipse class="region" data-region="1" cx="150" cy="300" rx="10" ry="7"/>
+</svg>

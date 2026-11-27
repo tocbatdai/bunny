@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="little butterfly">
+<rect width="500" height="500" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#24202b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#24202b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#24202b}</style>
+<path class="region" data-region="1" d="M236 232C186 120 96 52 62 104C38 150 70 236 236 258Z"/>
+<path class="region" data-region="1" d="M 264 232C 314 120 404 52 438 104C 462 150 430 236 264 258Z"/>
+<path class="region" data-region="1" d="M238 266C150 262 82 328 112 390C140 446 214 392 242 304Z"/>
+<path class="region" data-region="1" d="M 262 266C 350 262 418 328 388 390C 360 446 286 392 258 304Z"/>
+<ellipse class="region" data-region="1" cx="140" cy="158" rx="50" ry="28" transform="rotate(38 140 158)"/>
+<ellipse class="region" data-region="1" cx="360" cy="158" rx="50" ry="28" transform="rotate(-38 360 158)"/>
+<ellipse class="region" data-region="1" cx="164" cy="344" rx="28" ry="42" transform="rotate(34 164 344)"/>
+<ellipse class="region" data-region="1" cx="336" cy="344" rx="28" ry="42" transform="rotate(-34 336 344)"/>
+<circle class="region" data-region="1" cx="94" cy="116" r="13"/>
+<circle class="region" data-region="1" cx="406" cy="116" r="13"/>
+<path class="line" d="M236 152Q214 104 196 84M264 152Q286 104 304 84"/>
+<circle class="region" data-region="1" cx="193" cy="78" r="10"/>
+<circle class="region" data-region="1" cx="307" cy="78" r="10"/>
+<path class="region" data-region="1" d="M250 258C272 258 272 300 270 340C268 380 262 410 250 410C238 410 232 380 230 340C228 300 228 258 250 258Z"/>
+<path class="line" d="M232 300L268 300M231 332L269 332M233 364L267 364"/>
+<circle class="region" data-region="1" cx="250" cy="244" r="22"/>
+<circle class="region" data-region="1" cx="250" cy="186" r="44"/>
+<ellipse class="dot" cx="234" cy="180" rx="6" ry="7"/>
+<ellipse class="dot" cx="266" cy="180" rx="6" ry="7"/>
+<path class="line" d="M234 200Q250 214 266 200"/>
+</svg>

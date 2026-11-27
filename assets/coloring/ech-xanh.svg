@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="green frog">
+<rect width="500" height="500" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#24202b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#24202b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#24202b}</style>
+<path class="region" data-region="1" d="M150 330C90 330 70 420 118 452C150 470 190 440 196 400Z"/>
+<path class="region" data-region="1" d="M 350 330C 410 330 430 420 382 452C 350 470 310 440 304 400Z"/>
+<path class="region" data-region="1" d="M80 470A13 13 0 0 1 86 448A13 13 0 0 1 108 440A13 13 0 0 1 132 440A13 13 0 0 1 154 448A13 13 0 0 1 160 470Z"/>
+<path class="region" data-region="1" d="M340 470A13 13 0 0 1 346 448A13 13 0 0 1 368 440A13 13 0 0 1 392 440A13 13 0 0 1 414 448A13 13 0 0 1 420 470Z"/>
+<path class="region" data-region="1" d="M250 296C350 296 384 360 370 410C356 456 300 470 250 470C200 470 144 456 130 410C116 360 150 296 250 296Z"/>
+<ellipse class="region" data-region="1" cx="250" cy="400" rx="74" ry="52"/>
+<path class="region" data-region="1" d="M168 470A11 11 0 0 1 174 452A11 11 0 0 1 192 446A11 11 0 0 1 208 446A11 11 0 0 1 226 452A11 11 0 0 1 232 470Z"/>
+<path class="region" data-region="1" d="M268 470A11 11 0 0 1 274 452A11 11 0 0 1 292 446A11 11 0 0 1 308 446A11 11 0 0 1 326 452A11 11 0 0 1 332 470Z"/>
+<ellipse class="region" data-region="1" cx="250" cy="236" rx="172" ry="96"/>
+<circle class="region" data-region="1" cx="180" cy="136" r="60"/>
+<ellipse class="dot" cx="186" cy="144" rx="27" ry="27"/>
+<circle fill="#fff" cx="194" cy="134" r="10"/>
+<circle class="region" data-region="1" cx="320" cy="136" r="60"/>
+<ellipse class="dot" cx="326" cy="144" rx="27" ry="27"/>
+<circle fill="#fff" cx="334" cy="134" r="10"/>
+<ellipse class="dot" cx="232" cy="226" rx="6" ry="9"/>
+<ellipse class="dot" cx="268" cy="226" rx="6" ry="9"/>
+<path class="line" d="M152 264Q250 334 348 264"/>
+<ellipse class="region" data-region="1" cx="126" cy="272" rx="20" ry="12"/>
+<ellipse class="region" data-region="1" cx="374" cy="272" rx="20" ry="12"/>
+</svg>

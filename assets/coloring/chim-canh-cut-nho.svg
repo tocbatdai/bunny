@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="little penguin">
+<rect width="500" height="500" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#24202b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#24202b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#24202b}</style>
+<path class="region" data-region="1" d="M168 452A16 16 0 0 1 182 432A16 16 0 0 1 238 432A16 16 0 0 1 252 452A16 16 0 0 1 224 462A16 16 0 0 1 196 462A16 16 0 0 1 168 452Z"/>
+<path class="region" data-region="1" d="M248 452A16 16 0 0 1 262 432A16 16 0 0 1 318 432A16 16 0 0 1 332 452A16 16 0 0 1 304 462A16 16 0 0 1 276 462A16 16 0 0 1 248 452Z"/>
+<path class="region" data-region="1" d="M148 236C104 276 86 340 96 382C124 366 146 330 162 292Z"/>
+<path class="region" data-region="1" d="M 352 236C 396 276 414 340 404 382C 376 366 354 330 338 292Z"/>
+<path class="region" data-region="1" d="M250 62C344 62 366 166 358 236C390 300 384 414 322 442L178 442C116 414 110 300 142 236C134 166 156 62 250 62Z"/>
+<path class="region" data-region="1" d="M250 118C226 90 172 100 178 158C181 202 214 228 250 232C286 228 319 202 322 158C328 100 274 90 250 118Z"/>
+<ellipse class="region" data-region="1" cx="250" cy="338" rx="78" ry="96"/>
+<ellipse class="dot" cx="218" cy="160" rx="10" ry="13"/>
+<circle fill="#fff" cx="221" cy="155" r="4"/>
+<ellipse class="dot" cx="282" cy="160" rx="10" ry="13"/>
+<circle fill="#fff" cx="285" cy="155" r="4"/>
+<ellipse class="region" data-region="1" cx="200" cy="196" rx="11" ry="7"/>
+<ellipse class="region" data-region="1" cx="300" cy="196" rx="11" ry="7"/>
+<path class="region" data-region="1" d="M228 186Q250 174 272 186Q252 214 228 186Z"/>
+</svg>

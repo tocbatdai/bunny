@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="rainbow with smiling clouds">
+<rect width="500" height="500" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#24202b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#24202b;stroke-width:6;stroke-linecap:round}.dot{fill:#24202b}</style>
+<path class="region" data-region="1" d="M40 375L40 320A210 210 0 0 1 460 320L460 375L438 375L438 320A188 188 0 0 0 62 320Z"/>
+<path class="region" data-region="1" d="M62 375L62 320A188 188 0 0 1 438 320L438 375L416 375L416 320A166 166 0 0 0 84 320Z"/>
+<path class="region" data-region="1" d="M84 375L84 320A166 166 0 0 1 416 320L416 375L394 375L394 320A144 144 0 0 0 106 320Z"/>
+<path class="region" data-region="1" d="M106 375L106 320A144 144 0 0 1 394 320L394 375L372 375L372 320A122 122 0 0 0 128 320Z"/>
+<path class="region" data-region="1" d="M128 375L128 320A122 122 0 0 1 372 320L372 375L350 375L350 320A100 100 0 0 0 150 320Z"/>
+<path class="region" data-region="1" d="M150 375L150 320A100 100 0 0 1 350 320L350 375L328 375L328 320A78 78 0 0 0 172 320Z"/>
+<path class="region" data-region="1" d="M45 405A30 30 0 0 1 30 350A33 33 0 0 1 70 300A34 34 0 0 1 130 280A32 32 0 0 1 185 302A33 33 0 0 1 223 352A30 30 0 0 1 205 405A40 40 0 0 1 152 412A40 40 0 0 1 98 412A40 40 0 0 1 45 405Z"/>
+<circle class="dot" cx="93" cy="345" r="11"/>
+<circle fill="#fff" cx="96.5" cy="341" r="3.5"/>
+<circle class="dot" cx="157" cy="345" r="11"/>
+<circle fill="#fff" cx="160.5" cy="341" r="3.5"/>
+<path class="line" d="M99 372Q125 396 151 372"/>
+<path class="region" data-region="1" d="M295 405A30 30 0 0 1 280 350A33 33 0 0 1 320 300A34 34 0 0 1 380 280A32 32 0 0 1 435 302A33 33 0 0 1 473 352A30 30 0 0 1 455 405A40 40 0 0 1 402 412A40 40 0 0 1 348 412A40 40 0 0 1 295 405Z"/>
+<circle class="dot" cx="343" cy="345" r="11"/>
+<circle fill="#fff" cx="346.5" cy="341" r="3.5"/>
+<circle class="dot" cx="407" cy="345" r="11"/>
+<circle fill="#fff" cx="410.5" cy="341" r="3.5"/>
+<path class="line" d="M349 372Q375 396 401 372"/>
+<path class="region" data-region="1" d="M48 28L54.8 42.7L70.8 44.6L59 55.6L62.1 71.4L48 63.5L33.9 71.4L37 55.6L25.2 44.6L41.2 42.7Z"/>
+<path class="region" data-region="1" d="M150 44L155.6 56.2L169 57.8L159.1 67L161.8 80.2L150 73.6L138.2 80.2L140.9 67L131 57.8L144.4 56.2Z"/>
+<path class="region" data-region="1" d="M250 20L255.6 32.2L269 33.8L259.1 43L261.8 56.2L250 49.6L238.2 56.2L240.9 43L231 33.8L244.4 32.2Z"/>
+<path class="region" data-region="1" d="M350 44L355.6 56.2L369 57.8L359.1 67L361.8 80.2L350 73.6L338.2 80.2L340.9 67L331 57.8L344.4 56.2Z"/>
+<path class="region" data-region="1" d="M452 28L458.8 42.7L474.8 44.6L463 55.6L466.1 71.4L452 63.5L437.9 71.4L441 55.6L429.2 44.6L445.2 42.7Z"/>
+<path class="region" data-region="1" d="M32 216L37.1 227L49.1 228.4L40.2 236.7L42.6 248.6L32 242.6L21.4 248.6L23.8 236.7L14.9 228.4L26.9 227Z"/>
+<path class="region" data-region="1" d="M468 216L473.1 227L485.1 228.4L476.2 236.7L478.6 248.6L468 242.6L457.4 248.6L459.8 236.7L450.9 228.4L462.9 227Z"/>
+<path class="region" data-region="1" d="M42 442L47.6 454.2L61 455.8L51.1 465L53.8 478.2L42 471.6L30.2 478.2L32.9 465L23 455.8L36.4 454.2Z"/>
+<path class="region" data-region="1" d="M250 436L256.2 449.5L270.9 451.2L260 461.3L262.9 475.8L250 468.6L237.1 475.8L240 461.3L229.1 451.2L243.8 449.5Z"/>
+<path class="region" data-region="1" d="M458 442L463.6 454.2L477 455.8L467.1 465L469.8 478.2L458 471.6L446.2 478.2L448.9 465L439 455.8L452.4 454.2Z"/>
+<path class="region" data-region="1" d="M62 169.1C31.6 153.9 44 130.2 62 145.3C80 130.2 92.4 153.9 62 169.1Z"/>
+<path class="region" data-region="1" d="M438 169.1C407.6 153.9 419.9 130.2 438 145.3C456.1 130.2 468.4 153.9 438 169.1Z"/>
+<path class="region" data-region="1" d="M250 296.4C224.4 283.6 234.8 263.6 250 276.4C265.2 263.6 275.6 283.6 250 296.4Z"/>
+<path class="region" data-region="1" d="M145 478.2C116.2 463.8 127.9 441.3 145 455.7C162.1 441.3 173.8 463.8 145 478.2Z"/>
+<path class="region" data-region="1" d="M355 478.2C326.2 463.8 337.9 441.3 355 455.7C372.1 441.3 383.8 463.8 355 478.2Z"/>
+</svg>
