@@ -80,7 +80,17 @@ export const drawings = [
   {"id":"animal-009","name":"Sao biển","category":"animals","src":"assets/coloring/sao-bien.svg"},
   {"id":"animal-010","name":"Rồng con","category":"animals","src":"assets/coloring/rong-con.svg"},
   {"id":"animal-011","name":"Hổ con","category":"animals","src":"assets/coloring/ho-con.svg"},
-  {"id":"animal-012","name":"Cá đuối","category":"animals","src":"assets/coloring/ca-duoi.svg"}
+  {"id":"animal-012","name":"Cá đuối","category":"animals","src":"assets/coloring/ca-duoi.svg"},
+  {"id":"animal-013","name":"Ngựa con","category":"animals","src":"assets/coloring/ngua-con.svg"},
+  {"id":"animal-014","name":"Dê con","category":"animals","src":"assets/coloring/de-con.svg"},
+  {"id":"animal-015","name":"Cừu con","category":"animals","src":"assets/coloring/cuu-con.svg"},
+  {"id":"animal-016","name":"Trâu con","category":"animals","src":"assets/coloring/trau-con.svg"},
+  {"id":"animal-017","name":"Thỏ con","category":"animals","src":"assets/coloring/tho-con.svg"},
+  {"id":"animal-018","name":"Sư tử con","category":"animals","src":"assets/coloring/su-tu-con.svg"},
+  {"id":"animal-019","name":"Hươu cao cổ","category":"animals","src":"assets/coloring/huou-cao-co-con.svg"},
+  {"id":"animal-020","name":"Gấu con","category":"animals","src":"assets/coloring/gau-con.svg"},
+  {"id":"animal-021","name":"Bướm xinh","category":"animals","src":"assets/coloring/buom-xinh.svg"},
+  {"id":"animal-022","name":"Cá heo con","category":"animals","src":"assets/coloring/ca-heo-con.svg"}
 ];
 
 export const categories = [
