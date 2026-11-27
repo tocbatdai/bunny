@@ -58,18 +58,24 @@ export function tone(freq, { dur = 0.45, vol = 0.02, delay = 0, type = "sine", s
 // The shared AudioContext (created on first use), for zones that build their own audio graph.
 export const audioContext = () => ctx();
 
-// A xylophone-like note: a sine with two quickly fading overtones.
-export function pling(freq, { vol = 0.2, dur = 1.3 } = {}) {
+// An electric-piano-like note: a few harmonics through a low-pass filter that closes as the
+// note fades, with a strong attack that drops quickly and then a long, soft decay.
+export function piano(freq, { vol = 0.22, dur = 2.2 } = {}) {
   if (!on) return;
   const c = ctx(); if (!c) return;
-  const t = c.currentTime, out = c.createGain();
-  out.gain.setValueAtTime(0.0001, t); out.gain.exponentialRampToValueAtTime(vol, t + 0.006); out.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-  out.connect(c.destination);
-  for (const [mult, gain, decay] of [[1, 1, dur], [3.98, 0.28, 0.35], [9.2, 0.08, 0.12]]) {
+  const t = c.currentTime, out = c.createGain(), lp = c.createBiquadFilter();
+  lp.type = "lowpass";
+  lp.frequency.setValueAtTime(Math.min(9000, freq * 14), t);
+  lp.frequency.exponentialRampToValueAtTime(Math.max(700, freq * 2.5), t + 1.2);
+  out.gain.setValueAtTime(0.0001, t);
+  out.gain.exponentialRampToValueAtTime(vol, t + 0.004);
+  out.gain.exponentialRampToValueAtTime(vol * 0.35, t + 0.3);
+  out.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  lp.connect(out); out.connect(c.destination);
+  for (const [mult, type, gain] of [[1, "triangle", 1], [2, "sine", 0.35], [3, "sine", 0.12], [1.004, "sawtooth", 0.05]]) {
     const o = c.createOscillator(), g = c.createGain();
-    o.type = "sine"; o.frequency.value = freq * mult;
-    g.gain.setValueAtTime(gain, t); g.gain.exponentialRampToValueAtTime(0.0001, t + decay);
-    o.connect(g); g.connect(out); o.start(t); o.stop(t + dur + 0.05);
+    o.type = type; o.frequency.value = freq * mult; g.gain.value = gain;
+    o.connect(g); g.connect(lp); o.start(t); o.stop(t + dur + 0.05);
   }
 }
 

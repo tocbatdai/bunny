@@ -24,8 +24,8 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 - Nút 🎯 **Tìm con vật**: giọng hỏi "Con vịt đâu?". Lúc đầu 2 lựa chọn, đúng 3 lần thì 3 lựa chọn, đúng 8 lần thì 4. Chọn sai thì giọng nói tên con bé vừa chạm rồi hỏi lại. Nút 👂 nghe lại câu hỏi. Cứ đúng 5 lần thì có lời khen.
 
 ### Bé Khám Phá Âm Thanh (Âm Nhạc)
-- 🎹 **Đàn**: 8 thanh xylophone cầu vồng (Đô đến Đô cao). Chạm nhiều ngón cùng lúc được, vuốt ngang qua các thanh thì đàn kêu liên tiếp. Tiếng đàn tổng hợp bằng Web Audio, không cần file âm thanh.
-  - 🎵 chơi tự do; ⭐ 🐑 🐮 là 3 bài (giai điệu dân gian đã hết bản quyền, chỉ có nhạc, không có lời): thanh cần chạm tiếp theo sáng lên, chạm đúng thì bài đi tiếp, chạm sai vẫn có tiếng. Nút 👂 nghe bài mẫu. Chơi hết bài thì có lời khen.
+- 🎹 **Đàn piano**: 8 phím trắng to (Đô đến Đô cao, mỗi phím có dải màu ở mép) và 5 phím đen. Chạm nhiều ngón cùng lúc được, vuốt dọc bàn phím thì đàn kêu liên tiếp. Tiếng piano tổng hợp bằng Web Audio, không cần file âm thanh. Cầm máy dọc thì bàn phím xoay nằm dọc màn hình (nốt trầm ở trên).
+  - 🎵 chơi tự do; ⭐ 🐑 🐮 là 3 bài (giai điệu dân gian đã hết bản quyền, chỉ có nhạc, không có lời): phím cần nhấn tiếp theo sáng màu và có ngôi sao, nhấn đúng thì bài đi tiếp, nhấn phím khác vẫn có tiếng. Nút 👂 nghe bài mẫu. Chơi hết bài thì có lời khen.
 - 🎤 **Mic vui**: bạn thú trên sân khấu nhảy theo giọng bé, đèn sáng và sao bay khi bé hát to (chạm bạn thú để đổi bạn khác). Nút 🔴 thu 5 giây rồi nghe lại bằng 🙂 giọng bé, 🐭 giọng chuột, 🐻 giọng gấu, 🏔️ giọng vọng.
   - Cần cho phép dùng micro. Tiếng chỉ nằm trong máy, không gửi đi, không lưu lại; micro tắt ngay khi thu xong và khi rời màn hình.
 
@@ -51,7 +51,7 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 | `src/zones/hub/` | Trang chủ: cảnh thế giới SVG (bố cục ngang và dọc) và danh sách ngôi nhà trong `world.js` |
 | `src/zones/ve/` | Khu tô màu (Bé Vẽ Vui) |
 | `src/zones/nhan-biet/` | Khu Vườn Thú. Hình con vật là SVG vẽ trong `animals.js` (thêm con mới: thêm một mục vào danh sách) |
-| `src/zones/am-nhac/` | Khu Âm Nhạc: đàn và các bài trong `am-nhac.js`, Mic vui trong `mic.js` |
+| `src/zones/am-nhac/` | Khu Âm Nhạc: đàn piano và các bài trong `am-nhac.js`, Mic vui trong `mic.js` |
 | `src/zones/ghep-hinh/` | Khu ghép hình. Tranh màu được vẽ ngay trên máy từ nét vẽ và file vùng tô (`src/shared/picture.js`) |
 | `src/pages.js` | Định dạng file vùng tô (dùng chung cho app và công cụ build) |
 | `data/drawings.js` | Danh sách tranh và danh mục |
