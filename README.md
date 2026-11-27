@@ -17,7 +17,11 @@ Web app tĩnh (HTML/CSS/JS thuần, không cần backend, không cần cài pack
 ## Cấu trúc
 | Đường dẫn | Nội dung |
 |---|---|
-| `index.html`, `styles.css`, `app.js` | Giao diện và logic |
+| `index.html`, `styles.css` | Giao diện |
+| `app.js` | Khung app: nút dùng chung, router, offline |
+| `src/router.js` | Router theo hash: `#/ve` (danh sách tranh), `#/ve/<id>` (tô một tranh). Mỗi khu tải lần đầu khi bé vào |
+| `src/shared/` | Dùng chung cho mọi khu: âm thanh và nhạc, giọng đọc tiếng Việt, màn khen, lưu dữ liệu |
+| `src/zones/ve/` | Khu tô màu (Bé Vẽ Vui) |
 | `src/pages.js` | Định dạng file vùng tô (dùng chung cho app và công cụ build) |
 | `data/drawings.js` | Danh sách tranh và danh mục |
 | `assets/coloring/` | Tranh gốc (SVG/PNG) |
