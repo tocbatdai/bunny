@@ -7,7 +7,7 @@ Web app tĩnh (HTML/CSS/JS thuần, không cần backend, không cần cài pack
 - 12 màu lớn, dễ chạm. Chạm một vùng là tô cả vùng, chạm lên nét vẽ thì tự chọn vùng gần nhất.
 - Nút ↶ quay lại bước trước. Nút ↺ phải **giữ** khoảng 1 giây mới xóa hết màu, bấm nhầm không sao.
 - Màu bé tô được lưu lại, mở lại tranh vẫn còn.
-- Tô gần xong thì có lời khen, pháo giấy và giọng đọc. Nút 🔊 bật/tắt toàn bộ âm thanh.
+- Tô kín 100% các vùng thì có lời khen, pháo giấy và giọng đọc (giọng tiếng Việt của máy; máy không có giọng tiếng Việt thì chỉ hiện chữ, không đọc sai). Nút 🔊 bật/tắt toàn bộ âm thanh.
 - Chỉ nhận một ngón tay mỗi lần, nên lòng bàn tay chạm vào màn hình không làm tô lung tung.
 
 ## Cài lên điện thoại/tablet

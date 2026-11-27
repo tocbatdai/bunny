@@ -10,8 +10,8 @@ const COLORS = [
   ["#26a69a", "Xanh ngọc"], ["#42a5f5", "Xanh dương"], ["#ab82d6", "Tím"], ["#f48fb1", "Hồng"],
   ["#a1887f", "Nâu"], ["#ffc4a3", "Màu da"], ["#ffffff", "Trắng"], ["#333333", "Đen"],
 ];
-const DONE_AREA = 0.85, DONE_COUNT = 0.75;   // share of the picture needed before praise
-const HOLD_MS = 800;                          // reset button hold time
+const MIN_REQUIRED_SHARE = 0.0005;           // smaller inner areas (~18x18 px on 800x800) are not needed for 100%
+const HOLD_MS = 800;                         // reset button hold time
 const SNAP_RADIUS = 10;                       // a tap on a line snaps to the nearest area (px)
 
 const $ = (s) => document.querySelector(s);
@@ -197,10 +197,9 @@ async function openPicture(id) {
     // shade = how much of the paint shows through the line art (multiply), 0..1
     for (let i = 0, k = 0; i < shade.length; i++, k += 4) shade[i] = Math.min(1, (b[k] * 299 + b[k + 1] * 587 + b[k + 2] * 114) / 1000 / 235);
     const index = indexAreas(areas);
-    const sizes = new Map(areas.targets.map((t) => [t, index.offsets[t + 1] - index.offsets[t]]));
     state.page = {
       w, h, labels: areas.labels, ...index, base, shade, out: new ImageData(new Uint8ClampedArray(b), w, h),
-      targets: sizes, fills: new Map(), undo: [], praised: false,
+      required: requiredAreas(areas, index), fills: new Map(), undo: [], praised: false,
     };
     const saved = store.get("page:" + d.id, null);
     if (saved) {
@@ -282,11 +281,23 @@ canvas.addEventListener("pointerdown", (e) => {
 });
 for (const ev of ["pointerup", "pointercancel", "pointerleave"]) canvas.addEventListener(ev, (e) => fingers.delete(e.pointerId));
 
+// Praise only when the picture is 100% coloured: every area a child can see and tap. Not needed:
+// the background (areas touching the page border) and specks smaller than MIN_REQUIRED_SHARE,
+// which are gaps between lines rather than parts of the picture.
+// The build's "targets" (big inner areas) are always required, even on pictures whose
+// main shape touches the border.
+function requiredAreas({ w, h, areaCount, targets }, { offsets, box }) {
+  const ids = new Set(targets), min = w * h * MIN_REQUIRED_SHARE;
+  for (let id = 1; id <= areaCount; id++) {
+    const k = id * 4, edge = box[k] === 0 || box[k + 1] === 0 || box[k + 2] === w - 1 || box[k + 3] === h - 1;
+    if (!edge && offsets[id + 1] - offsets[id] >= min) ids.add(id);
+  }
+  return ids;
+}
 function isFinished() {
-  const { targets, fills } = state.page; if (!targets.size) return false;
-  let total = 0, done = 0, n = 0;
-  for (const [id, size] of targets) { total += size; if (fills.has(id)) { done += size; n++; } }
-  return done / total >= DONE_AREA && n / targets.size >= DONE_COUNT;
+  const { required, fills } = state.page; if (!required.size) return false;
+  for (const id of required) if (!fills.has(id)) return false;
+  return true;
 }
 
 /* ----------------------------------------------------------- undo / reset */
@@ -334,11 +345,38 @@ function showPraise() {
   $("#praise").hidden = false;
   stopMusic();
   [659.25, 783.99, 987.77, 1318.51].forEach((f, i) => tone(f, { dur: 0.3, vol: 0.05, delay: i * 0.12 }));
-  if (state.sound && "speechSynthesis" in window) {
-    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(msg); u.lang = "vi-VN"; u.rate = 0.9; u.pitch = 1.2; speechSynthesis.speak(u); } catch {}
-  }
+  if (state.sound) sayVietnamese(msg);
 }
-function hidePraise() { $("#praise").hidden = true; try { speechSynthesis.cancel(); } catch {} }
+
+// Speech must use a Vietnamese voice. Setting only lang="vi-VN" is not enough: Chrome on
+// Android/Windows often keeps the default (English) voice, which mangles Vietnamese. So pick a
+// Vietnamese voice explicitly, and stay silent if the device has none (text + fanfare still show).
+let viVoice = null, speaking = null;
+function findVietnameseVoice() {
+  if (!("speechSynthesis" in window)) return null;
+  const score = (v) => (/natural|online/i.test(v.name) ? 4 : 0) + (/google/i.test(v.name) ? 2 : 0) + (v.localService ? 1 : 0);
+  const vi = speechSynthesis.getVoices().filter((v) => /^vi([-_]|$)/i.test(v.lang || ""));
+  viVoice = vi.sort((a, b) => score(b) - score(a))[0] || null;
+  return viVoice;
+}
+if ("speechSynthesis" in window) {
+  findVietnameseVoice();   // voices load asynchronously in Chrome/Edge
+  try { speechSynthesis.addEventListener("voiceschanged", findVietnameseVoice); } catch { speechSynthesis.onvoiceschanged = findVietnameseVoice; }
+}
+function sayVietnamese(text) {
+  if (!("speechSynthesis" in window)) return;
+  const voice = viVoice || findVietnameseVoice(); if (!voice) return;
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.voice = voice; u.lang = voice.lang.replace("_", "-"); u.rate = 0.9; u.pitch = 1.1;
+    speaking = u;   // keep a reference: Chrome can drop an utterance that gets garbage-collected
+    u.onend = u.onerror = () => { if (speaking === u) speaking = null; };
+    // Chrome sometimes ignores speak() called right after cancel(), so give it a moment.
+    setTimeout(() => { if (speaking === u) speechSynthesis.speak(u); }, 60);
+  } catch {}
+}
+function hidePraise() { $("#praise").hidden = true; speaking = null; try { speechSynthesis.cancel(); } catch {} }
 $("#praise-stay").addEventListener("click", () => { hidePraise(); startMusic(); });
 $("#praise-next").addEventListener("click", () => {
   hidePraise();
