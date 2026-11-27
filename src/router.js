@@ -1,4 +1,5 @@
-// Hash router: "#/ve" is the colouring gallery, "#/ve/<id>" one picture, and so on per zone.
+// Hash router: "#/" is the world (home), "#/ve" the colouring gallery, "#/ve/<id>" one picture,
+// and so on per zone. The zone registered as "" handles the empty path.
 // Every screen change goes through history, so the on-screen Home button, Esc and the phone's
 // Back button behave the same. A zone is a module loaded the first time it is visited, with
 //   show(rest)  draw the screen for the path after the zone name (rest = [] for its start screen)
@@ -25,16 +26,16 @@ export function back(fallback) {
 }
 
 async function render() {
-  const seg = currentPath();
-  if (!seg.length || !zones.has(seg[0])) { navigate(defaultPath, { replace: true }); return; }
+  const seg = currentPath(), name = seg[0] || "";
+  if (!zones.has(name)) { navigate(defaultPath, { replace: true }); return; }
   const key = seg.join("/");
   if (key === shown) return;   // popstate and hashchange can both report the same change
   shown = key;
   const token = ++renderToken;
-  let zone = loaded.get(seg[0]);
+  let zone = loaded.get(name);
   if (!zone) {
-    try { zone = await zones.get(seg[0])(); } catch (err) { console.error(err); shown = null; return; }
-    loaded.set(seg[0], zone);
+    try { zone = await zones.get(name)(); } catch (err) { console.error(err); shown = null; return; }
+    loaded.set(name, zone);
     if (token !== renderToken) return;
   }
   if (active && active !== zone) active.leave();

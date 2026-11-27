@@ -122,6 +122,7 @@ function closePicture() {
   stopMusic(); cancelHold();
 }
 $("#home-btn").addEventListener("click", () => back("ve"));
+$("#gallery-home").addEventListener("click", () => back(""));
 
 /* ---------------------------------------------------------------- paint */
 function paintArea(id, colorIndex, draw = true) {

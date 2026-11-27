@@ -1,7 +1,7 @@
 {
-  "name": "Bé Vẽ Vui – Tô màu cho bé",
-  "short_name": "Bé Vẽ Vui",
-  "description": "Tô màu vui nhộn, đơn giản cho bé từ 2 tuổi.",
+  "name": "Thế Giới Của Bé",
+  "short_name": "Thế Giới Của Bé",
+  "description": "Tô màu, ghép hình, học nhận biết cho bé từ 2 tuổi.",
   "lang": "vi",
   "start_url": "./",
   "scope": "./",

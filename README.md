@@ -1,8 +1,19 @@
-# Bé Vẽ Vui – tô màu cho bé từ 2 tuổi
+# Thế Giới Của Bé – trò chơi cho bé từ 2 tuổi
 
 Web app tĩnh (HTML/CSS/JS thuần, không cần backend, không cần cài package). Cài được lên màn hình chính như một ứng dụng: chạy toàn màn hình và dùng được khi không có mạng.
 
 ## Dành cho bé
+Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một khu chơi: chạm vào thì nhà nảy lên, giọng đọc tên khu rồi mở ra. Nhà chưa làm xong đang "ngủ" (zzz), chạm vào thì nghe "Sắp có rồi!".
+
+| Ngôi nhà | Khu | Trạng thái |
+|---|---|---|
+| 🎨 Vẽ Vui | Bé Vẽ Vui (tô màu) | Có |
+| 🧩 Ghép Hình | Bé Ghép Hình | Sắp có |
+| 🦒 Vườn Thú | Bé Học Nhận Biết | Sắp có |
+| 🎵 Âm Nhạc | Bé Khám Phá Âm Thanh | Sắp có |
+| 📖 Kể Chuyện | Bé Nghe Kể Chuyện | Sắp có |
+
+### Bé Vẽ Vui
 - Chạm vào tranh là mở màn tô toàn màn hình. Nút 🏠 to ở góc trái để về trang chủ (nút Back của điện thoại cũng được).
 - 12 màu lớn, dễ chạm. Chạm một vùng là tô cả vùng, chạm lên nét vẽ thì tự chọn vùng gần nhất.
 - Nút ↶ quay lại bước trước. Nút ↺ phải **giữ** khoảng 1 giây mới xóa hết màu, bấm nhầm không sao.
@@ -19,8 +30,9 @@ Web app tĩnh (HTML/CSS/JS thuần, không cần backend, không cần cài pack
 |---|---|
 | `index.html`, `styles.css` | Giao diện |
 | `app.js` | Khung app: nút dùng chung, router, offline |
-| `src/router.js` | Router theo hash: `#/ve` (danh sách tranh), `#/ve/<id>` (tô một tranh). Mỗi khu tải lần đầu khi bé vào |
+| `src/router.js` | Router theo hash: `#/` (trang chủ thế giới), `#/ve` (danh sách tranh), `#/ve/<id>` (tô một tranh). Mỗi khu tải lần đầu khi bé vào |
 | `src/shared/` | Dùng chung cho mọi khu: âm thanh và nhạc, giọng đọc tiếng Việt, màn khen, lưu dữ liệu |
+| `src/zones/hub/` | Trang chủ: cảnh thế giới SVG (bố cục ngang và dọc) và danh sách ngôi nhà trong `world.js` |
 | `src/zones/ve/` | Khu tô màu (Bé Vẽ Vui) |
 | `src/pages.js` | Định dạng file vùng tô (dùng chung cho app và công cụ build) |
 | `data/drawings.js` | Danh sách tranh và danh mục |

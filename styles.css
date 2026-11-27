@@ -1,4 +1,4 @@
-/* Bé Vẽ Vui — made for children from 2 years old: big targets, few words, nothing that
+/* Thế Giới Của Bé — made for children from 2 years old: big targets, few words, nothing that
    has to be read. Performance notes: no backdrop-filter, no filter on the canvas, offscreen
    gallery cards skip rendering (content-visibility), animations only use transform/opacity. */
 :root {
@@ -38,6 +38,38 @@ button:focus-visible { outline: 4px solid var(--accent); outline-offset: 3px; }
 .round-btn:disabled { opacity: .35; cursor: default; }
 .round-btn:disabled:active { transform: none; box-shadow: 0 5px 0 var(--shadow); }
 .round-btn svg { width: 30px; height: 30px; fill: none; stroke: var(--ink); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- world (home screen) ---------- */
+.world { position: fixed; inset: 0; background: #b9e48c; overflow: hidden; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.world-scene, .world-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.world-bar {
+  position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: max(10px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 0 max(12px, env(safe-area-inset-left)); pointer-events: none;
+}
+.world-bar > * { pointer-events: auto; }
+.world-title { display: flex; align-items: center; gap: 10px; padding: 6px 18px 6px 6px; border-radius: 34px; background: #ffffffd9; box-shadow: 0 4px 0 #0000001a; font-size: clamp(19px, 4.4vw, 28px); font-weight: 900; }
+.world-title .brand-mark { width: 46px; height: 46px; border-radius: 14px; }
+.world .round-btn { width: 52px; height: 52px; font-size: 24px; box-shadow: 0 4px 0 #0000001a; }
+
+.house { cursor: pointer; outline: none; transform-box: fill-box; transform-origin: 50% 100%; touch-action: manipulation; }
+.house:focus-visible .house-body { stroke: var(--accent); }
+.house-label { font: 900 25px Nunito, "Segoe UI", system-ui, sans-serif; fill: var(--ink); text-anchor: middle; }
+.house:not(.asleep) .house-body { transform-box: fill-box; transform-origin: 50% 100%; animation: invite 4s ease-in-out 1.5s infinite; }
+.house.bounce { animation: house-bounce .6s cubic-bezier(.3, 1.6, .5, 1); }
+.house.wobble { animation: shake .45s; }
+.zzz text { font: 900 26px Nunito, system-ui, sans-serif; fill: #6c5bd6; animation: zzz 2.4s ease-in-out infinite; }
+.zzz text:nth-child(2) { animation-delay: .4s; }
+.zzz text:nth-child(3) { animation-delay: .8s; }
+.w-cloud { animation: drift 70s linear infinite; animation-delay: var(--d, 0s); }
+.w-sun { animation: spin 40s linear infinite; }
+.w-duck { animation: bob 2.2s ease-in-out infinite alternate; }
+@keyframes house-bounce { 30% { transform: scale(1.12, .9); } 60% { transform: scale(.95, 1.08) translateY(-14px); } }
+@keyframes invite { 0%, 88%, 100% { transform: none; } 92% { transform: scale(1.04, .97); } 96% { transform: scale(.98, 1.03); } }
+@keyframes zzz { 0%, 100% { opacity: .25; transform: translateY(4px); } 50% { opacity: 1; transform: translateY(-4px); } }
+@keyframes drift { from { transform: translateX(-60px); } 50% { transform: translateX(160px); } to { transform: translateX(-60px); } }
+@keyframes spin { to { transform: rotate(1turn); } }
+@keyframes bob { to { transform: translateY(-6px) rotate(-4deg); } }
+@media (max-width: 420px) { .world-title { padding-right: 14px; } .world-title .brand-mark { width: 38px; height: 38px; } }
 
 /* ---------- home ---------- */
 .home { min-height: 100%; padding: max(12px, env(safe-area-inset-top)) var(--gap) max(24px, env(safe-area-inset-bottom)); }

@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#fff4ec">
-  <meta name="description" content="Bé Vẽ Vui – tô màu vui nhộn, đơn giản cho bé từ 2 tuổi.">
+  <meta name="description" content="Thế Giới Của Bé – tô màu, ghép hình, học nhận biết cho bé từ 2 tuổi.">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Bé Vẽ Vui">
-  <title>Bé Vẽ Vui</title>
+  <meta name="apple-mobile-web-app-title" content="Thế Giới Của Bé">
+  <title>Thế Giới Của Bé</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icons/favicon-64.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
@@ -20,10 +20,22 @@
   <link rel="modulepreload" href="app.js">
 </head>
 <body>
-  <!-- Home: pick a picture -->
-  <div id="home" class="home">
+  <!-- World (home screen): each house is a zone -->
+  <div id="world" class="world" hidden>
+    <div id="world-scene" class="world-scene"></div>
+    <header class="world-bar">
+      <div class="world-title"><img class="brand-mark" src="assets/icons/icon-192.png" alt="" width="52" height="52"><b>Thế Giới Của Bé</b></div>
+      <div class="home-actions">
+        <button id="world-sound" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
+        <button id="world-fullscreen" class="round-btn" type="button" aria-label="Toàn màn hình" hidden>⛶</button>
+      </div>
+    </header>
+  </div>
+
+  <!-- Bé Vẽ Vui: pick a picture -->
+  <div id="home" class="home" hidden>
     <header class="home-bar">
-      <div class="brand"><img class="brand-mark" src="assets/icons/icon-192.png" alt="" width="52" height="52"><b>Bé Vẽ Vui</b></div>
+      <div class="brand"><button id="gallery-home" class="round-btn home-btn" type="button" aria-label="Về Thế Giới Của Bé">🏠</button><b>Bé Vẽ Vui</b></div>
       <div class="home-actions">
         <button id="home-sound" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
         <button id="fullscreen-btn" class="round-btn" type="button" aria-label="Toàn màn hình" hidden>⛶</button>

@@ -5,21 +5,21 @@ import { bindSoundButton } from "./src/shared/sound.js";
 import { praiseOpen, hidePraise } from "./src/shared/praise.js";
 import { registerZone, startRouter, onRoute, currentPath, back } from "./src/router.js";
 
+registerZone("", () => import("./src/zones/hub/hub.js"));
 registerZone("ve", () => import("./src/zones/ve/ve.js"));
 
-bindSoundButton($("#home-sound"));
-bindSoundButton($("#sound-btn"));
-bindFullscreenButton($("#fullscreen-btn"));
+for (const id of ["#world-sound", "#home-sound", "#sound-btn"]) bindSoundButton($(id));
+for (const id of ["#world-fullscreen", "#fullscreen-btn"]) bindFullscreenButton($(id));
 
 // Esc closes the praise card, otherwise goes up one screen (like the Home button).
 document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
   const path = currentPath();
   if (praiseOpen()) hidePraise();
-  else if (path.length > 1) back(path.slice(0, -1).join("/"));
+  else if (path.length) back(path.slice(0, -1).join("/"));
 });
 
-startRouter("ve");
+startRouter("");
 
 // Offline + install support. Skipped on localhost so development always sees fresh files.
 if ("serviceWorker" in navigator && (location.hostname !== "localhost" || location.search.includes("sw=1"))) {
