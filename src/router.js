@@ -38,7 +38,10 @@ async function render() {
     loaded.set(name, zone);
     if (token !== renderToken) return;
   }
-  if (active && active !== zone) active.leave();
+  if (active !== zone) {
+    if (active) active.leave();
+    window.scrollTo(0, 0);   // a zone opens at its top, not where the last zone's list was scrolled
+  }
   active = zone;
   zone.show(seg.slice(1));
   for (const fn of listeners) fn(seg);

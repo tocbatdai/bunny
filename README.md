@@ -40,7 +40,7 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 |---|---|
 | `index.html`, `styles.css` | Giao diện |
 | `app.js` | Khung app: nút dùng chung, router, offline |
-| `src/router.js` | Router theo hash: `#/` (trang chủ thế giới), `#/ve` (danh sách tranh), `#/ve/<id>` (tô một tranh). Mỗi khu tải lần đầu khi bé vào |
+| `src/router.js` | Router theo hash: `#/` (trang chủ thế giới), `#/ve` và `#/ve/<id>` (tô màu), `#/ghep-hinh` và `#/ghep-hinh/<id>` (ghép hình), `#/nhan-biet` và `#/nhan-biet/tim` (vườn thú). Mỗi khu tải lần đầu khi bé vào |
 | `src/shared/` | Dùng chung cho mọi khu: âm thanh và nhạc, giọng đọc tiếng Việt, màn khen, lưu dữ liệu |
 | `src/zones/hub/` | Trang chủ: cảnh thế giới SVG (bố cục ngang và dọc) và danh sách ngôi nhà trong `world.js` |
 | `src/zones/ve/` | Khu tô màu (Bé Vẽ Vui) |
@@ -64,6 +64,15 @@ python tools/dev_server.py
 ```
 Mở http://localhost:5173. Muốn thử trên điện thoại/tablet cùng Wi-Fi: chạy `python tools/dev_server.py 5173 lan` rồi mở `http://<IP máy tính>:5173` trên máy đó. Service worker không chạy trên localhost (để luôn thấy file mới); thêm `?sw=1` vào URL nếu muốn thử offline.
 
+### Offline
+Lần đầu mở app (có mạng), service worker lưu toàn bộ code của mọi khu và ảnh nhỏ của tất cả tranh. Sau đó không có mạng vẫn mở được trang chủ, danh sách tranh, Vườn Thú (hình con vật nằm trong code). Tô màu và ghép hình cần nét vẽ + file vùng của tranh: tranh nào đã mở ít nhất một lần thì dùng offline được, tranh chưa mở thì hiện 😢 cạnh tên.
+
+### Thêm khu mới
+1. Tạo `src/zones/<tên>/<tên>.js` export `show(rest)` và `leave()`, thêm phần HTML của khu vào `index.html` (để `hidden`).
+2. Đăng ký trong `app.js`: `registerZone("<tên>", () => import(...))`.
+3. Trong `src/zones/hub/world.js`, đặt `route: "<tên>"` cho ngôi nhà tương ứng (nhà có `route: null` là nhà đang "ngủ").
+4. Thêm các file mới vào `SHELL_FILES` trong `sw.js` và tăng `APP_VERSION`.
+
 ## Thêm hoặc sửa tranh
 1. Bỏ file vào `assets/coloring/` (PNG nét đen trên nền trắng, hoặc SVG với các vùng có `data-region`).
 2. Thêm một dòng vào `data/drawings.js` (`id` không trùng).
@@ -75,4 +84,4 @@ Mở http://localhost:5173. Muốn thử trên điện thoại/tablet cùng Wi-F
 Import repository vào Vercel (hoặc GitHub Pages). Không cần build command, thư mục gốc là trang web.
 
 ## Lưu ý về hình ảnh
-Tranh SVG trong `assets/coloring` là minh họa vector đơn giản tạo riêng cho dự án; nhóm "Nhân vật" là mascot nguyên bản. Nếu muốn đưa nhân vật có bản quyền vào bản phát hành công khai, cần có quyền sử dụng artwork phù hợp.
+Tranh SVG trong `assets/coloring` là minh họa vector đơn giản tạo riêng cho dự án; nhóm "Nhân vật" là mascot nguyên bản. Cảnh thế giới ở trang chủ (`world.js`) và 12 con vật ở Vườn Thú (`animals.js`) cũng là hình vẽ nguyên bản cho dự án. Nếu muốn đưa nhân vật có bản quyền vào bản phát hành công khai, cần có quyền sử dụng artwork phù hợp.
