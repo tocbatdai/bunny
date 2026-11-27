@@ -9,6 +9,13 @@
 
 export const PAGE_MAGIC = "BVV1";
 
+// The colouring palette. Saved pictures store indexes into this list, so only append to it.
+export const COLORS = [
+  ["#ef5350", "Đỏ"], ["#ff9f43", "Cam"], ["#ffd54f", "Vàng"], ["#8bc34a", "Xanh lá"],
+  ["#26a69a", "Xanh ngọc"], ["#42a5f5", "Xanh dương"], ["#ab82d6", "Tím"], ["#f48fb1", "Hồng"],
+  ["#a1887f", "Nâu"], ["#ffc4a3", "Màu da"], ["#ffffff", "Trắng"], ["#333333", "Đen"],
+];
+
 export const pagePaths = (d) => ({
   art: `assets/pages/${d.id}.png`,   // cleaned line art written by tools/build.html (never the raw source)
   areas: `assets/pages/${d.id}.bin`,

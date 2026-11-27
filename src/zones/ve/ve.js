@@ -5,17 +5,12 @@
 // fetch line art + area map, decode, draw. A tap paints one pre-indexed pixel list and redraws
 // only that area's rectangle, which keeps it smooth on low-end phones and tablets.
 import { drawings, categories } from "../../../data/drawings.js";
-import { pagePaths, decodeAreas, indexAreas } from "../../pages.js";
+import { pagePaths, decodeAreas, indexAreas, COLORS } from "../../pages.js";
 import { $, store, loadImage } from "../../shared/dom.js";
 import { tone, unlockAudio, startMusic, stopMusic } from "../../shared/sound.js";
 import { showPraise, hidePraise } from "../../shared/praise.js";
 import { navigate, back } from "../../router.js";
 
-const COLORS = [
-  ["#ef5350", "Đỏ"], ["#ff9f43", "Cam"], ["#ffd54f", "Vàng"], ["#8bc34a", "Xanh lá"],
-  ["#26a69a", "Xanh ngọc"], ["#42a5f5", "Xanh dương"], ["#ab82d6", "Tím"], ["#f48fb1", "Hồng"],
-  ["#a1887f", "Nâu"], ["#ffc4a3", "Màu da"], ["#ffffff", "Trắng"], ["#333333", "Đen"],
-];
 const MIN_REQUIRED_SHARE = 0.0005;           // smaller inner areas (~18x18 px on 800x800) are not needed for 100%
 const HOLD_MS = 800;                         // reset button hold time
 const SNAP_RADIUS = 10;                       // a tap on a line snaps to the nearest area (px)

@@ -45,6 +45,32 @@
     <main id="grid" class="grid" aria-live="polite"></main>
   </div>
 
+  <!-- Bé Ghép Hình: pick a picture and how many pieces -->
+  <div id="puzzle-home" class="home" hidden>
+    <header class="home-bar">
+      <div class="brand"><button id="puzzle-home-btn" class="round-btn home-btn" type="button" aria-label="Về Thế Giới Của Bé">🏠</button><b>Bé Ghép Hình</b></div>
+      <div class="home-actions">
+        <button id="puzzle-home-sound" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
+      </div>
+    </header>
+    <nav id="puzzle-levels" class="tabs" aria-label="Chọn số mảnh"></nav>
+    <main id="puzzle-grid" class="grid" aria-live="polite"></main>
+  </div>
+
+  <!-- Puzzle screen (full screen) -->
+  <div id="puzzle" class="paint puzzle" hidden>
+    <header class="paint-bar">
+      <button id="puzzle-back" class="round-btn home-btn" type="button" aria-label="Chọn tranh khác">🏠</button>
+      <h1 id="puzzle-title" class="paint-title"></h1>
+      <div class="paint-actions">
+        <button id="puzzle-sound" class="round-btn" type="button" aria-pressed="true" aria-label="Tắt âm thanh">🔊</button>
+      </div>
+    </header>
+    <div id="puzzle-area" class="puzzle-area">
+      <div id="puzzle-board" class="puzzle-board"></div>
+    </div>
+  </div>
+
   <!-- Colouring screen (full screen) -->
   <div id="paint" class="paint" hidden>
     <header class="paint-bar">

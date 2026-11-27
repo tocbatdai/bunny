@@ -8,10 +8,15 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 | Ngôi nhà | Khu | Trạng thái |
 |---|---|---|
 | 🎨 Vẽ Vui | Bé Vẽ Vui (tô màu) | Có |
-| 🧩 Ghép Hình | Bé Ghép Hình | Sắp có |
+| 🧩 Ghép Hình | Bé Ghép Hình | Có |
 | 🦒 Vườn Thú | Bé Học Nhận Biết | Sắp có |
 | 🎵 Âm Nhạc | Bé Khám Phá Âm Thanh | Sắp có |
 | 📖 Kể Chuyện | Bé Nghe Kể Chuyện | Sắp có |
+
+### Bé Ghép Hình
+- Chọn số mảnh (2, 3, 4 hoặc 6) rồi chọn tranh. Tranh là các tranh tô màu, đã có màu: chỗ nào bé đã tô thì giữ màu của bé (tranh bé đã tô có dấu 🎨 và đứng đầu danh sách), còn lại app tự tô.
+- Mảnh ghép nằm nhỏ bên cạnh (hoặc bên dưới) bảng. Kéo một mảnh thì nó to lên; thả gần đúng chỗ thì tự hút vào. Thả sai chỗ thì mảnh quay về, không bị tính sai.
+- Ghép xong cả tranh thì có lời khen; nút 🔁 ghép lại tranh đó, ➡️ sang tranh kế.
 
 ### Bé Vẽ Vui
 - Chạm vào tranh là mở màn tô toàn màn hình. Nút 🏠 to ở góc trái để về trang chủ (nút Back của điện thoại cũng được).
@@ -34,6 +39,7 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 | `src/shared/` | Dùng chung cho mọi khu: âm thanh và nhạc, giọng đọc tiếng Việt, màn khen, lưu dữ liệu |
 | `src/zones/hub/` | Trang chủ: cảnh thế giới SVG (bố cục ngang và dọc) và danh sách ngôi nhà trong `world.js` |
 | `src/zones/ve/` | Khu tô màu (Bé Vẽ Vui) |
+| `src/zones/ghep-hinh/` | Khu ghép hình. Tranh màu được vẽ ngay trên máy từ nét vẽ và file vùng tô (`src/shared/picture.js`) |
 | `src/pages.js` | Định dạng file vùng tô (dùng chung cho app và công cụ build) |
 | `data/drawings.js` | Danh sách tranh và danh mục |
 | `assets/coloring/` | Tranh gốc (SVG/PNG) |

@@ -9,8 +9,10 @@ let handlers = null;
 
 export const praiseOpen = () => !$("#praise").hidden;
 
-export function showPraise(text, { onStay, onNext }) {
+export function showPraise(text, { onStay, onNext, stayIcon = "🖍️", stayLabel = "Tô tiếp tranh này" }) {
   handlers = { onStay, onNext };
+  $("#praise-stay").textContent = stayIcon;
+  $("#praise-stay").setAttribute("aria-label", stayLabel);
   $("#praise-text").textContent = text;
   $("#confetti").innerHTML = Array.from({ length: 24 }, (_, i) =>
     `<span style="--x:${Math.random() * 100}%;--d:${(Math.random() * 0.6).toFixed(2)}s">${BITS[i % BITS.length]}</span>`).join("");

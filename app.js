@@ -7,6 +7,7 @@ import { registerZone, startRouter, onRoute, currentPath, back } from "./src/rou
 
 registerZone("", () => import("./src/zones/hub/hub.js"));
 registerZone("ve", () => import("./src/zones/ve/ve.js"));
+registerZone("ghep-hinh", () => import("./src/zones/ghep-hinh/ghep-hinh.js"));
 
 for (const id of ["#world-sound", "#home-sound", "#sound-btn"]) bindSoundButton($(id));
 for (const id of ["#world-fullscreen", "#fullscreen-btn"]) bindFullscreenButton($(id));
