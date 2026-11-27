@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-label="ca-duoi">
+<rect width="440" height="440" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#4a3f55;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#4a3f55;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#4a3f55}</style>
+<path class="region" data-region="1" d="M194 286Q208 336 190 380L200 384Q220 336 206 286Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M200 110C240 110 300 160 370 200C320 222 260 262 200 292C140 262 80 222 30 200C100 160 160 110 200 110Z" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="116" cy="198" r="10" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="284" cy="198" r="10" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="148" cy="228" r="8" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="252" cy="228" r="8" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="200" cy="254" r="8" transform="translate(20 20)"/>
+<ellipse class="dot" cx="176" cy="170" rx="11" ry="14" transform="translate(20 20)"/>
+<circle fill="#fff" cx="179.8" cy="164.4" r="4.2" transform="translate(20 20)"/>
+<ellipse class="dot" cx="224" cy="170" rx="11" ry="14" transform="translate(20 20)"/>
+<circle fill="#fff" cx="227.8" cy="164.4" r="4.2" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="158" cy="196" rx="12" ry="7" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="242" cy="196" rx="12" ry="7" transform="translate(20 20)"/>
+<path class="line" d="M184 202Q200 216 216 202" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="326" cy="98" r="12" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="350" cy="66" r="8" transform="translate(20 20)"/>
+</svg>

@@ -19,7 +19,7 @@ Trang chủ là một cảnh thế giới vẽ tay. Mỗi ngôi nhà là một k
 - Ghép xong cả tranh thì có lời khen; nút 🔁 ghép lại tranh đó, ➡️ sang tranh kế.
 
 ### Bé Học Nhận Biết (Vườn Thú)
-- 12 con vật vẽ màu: mèo, chó, gà, vịt, bò, lợn, voi, khỉ, ếch, cá, rùa, chim cánh cụt.
+- 20 con vật vẽ màu: mèo, chó, gà, vịt, bò, lợn, voi, khỉ, ếch, cá, rùa, chim cánh cụt, cá chép, cá hề, cá nóc, cá vàng, sao biển, rồng, hổ, cá đuối. 8 con sau cũng có bản tranh tô màu (nhóm Động vật).
 - Chạm con vật thì nó nhảy lên và giọng đọc tên kèm tiếng kêu ("Con mèo. Meo meo!").
 - Nút 🎯 **Tìm con vật**: giọng hỏi "Con vịt đâu?". Lúc đầu 2 lựa chọn, đúng 3 lần thì 3 lựa chọn, đúng 8 lần thì 4. Chọn sai thì giọng nói tên con bé vừa chạm rồi hỏi lại. Nút 👂 nghe lại câu hỏi. Cứ đúng 5 lần thì có lời khen.
 
@@ -84,4 +84,4 @@ Lần đầu mở app (có mạng), service worker lưu toàn bộ code của m�
 Import repository vào Vercel (hoặc GitHub Pages). Không cần build command, thư mục gốc là trang web.
 
 ## Lưu ý về hình ảnh
-Tranh SVG trong `assets/coloring` là minh họa vector đơn giản tạo riêng cho dự án; nhóm "Nhân vật" là mascot nguyên bản. Cảnh thế giới ở trang chủ (`world.js`) và 12 con vật ở Vườn Thú (`animals.js`) cũng là hình vẽ nguyên bản cho dự án. Nếu muốn đưa nhân vật có bản quyền vào bản phát hành công khai, cần có quyền sử dụng artwork phù hợp.
+Tranh SVG trong `assets/coloring` là minh họa vector đơn giản tạo riêng cho dự án; nhóm "Nhân vật" là mascot nguyên bản. Cảnh thế giới ở trang chủ (`world.js`) và 20 con vật ở Vườn Thú (`animals.js`) cũng là hình vẽ nguyên bản cho dự án. Nếu muốn đưa nhân vật có bản quyền vào bản phát hành công khai, cần có quyền sử dụng artwork phù hợp.

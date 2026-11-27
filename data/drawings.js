@@ -72,7 +72,15 @@ export const drawings = [
   {"id":"animal-001","name":"Rùa con vui vẻ","category":"animals","src":"assets/coloring/rua-con-vui-ve.svg"},
   {"id":"animal-002","name":"Chim cánh cụt nhỏ","category":"animals","src":"assets/coloring/chim-canh-cut-nho.svg"},
   {"id":"animal-003","name":"Ếch xanh","category":"animals","src":"assets/coloring/ech-xanh.svg"},
-  {"id":"animal-004","name":"Bướm nhỏ","category":"animals","src":"assets/coloring/buom-nho.svg"}
+  {"id":"animal-004","name":"Bướm nhỏ","category":"animals","src":"assets/coloring/buom-nho.svg"},
+  {"id":"animal-005","name":"Cá chép","category":"animals","src":"assets/coloring/ca-chep.svg"},
+  {"id":"animal-006","name":"Cá hề","category":"animals","src":"assets/coloring/ca-he.svg"},
+  {"id":"animal-007","name":"Cá nóc","category":"animals","src":"assets/coloring/ca-noc.svg"},
+  {"id":"animal-008","name":"Cá vàng","category":"animals","src":"assets/coloring/ca-vang.svg"},
+  {"id":"animal-009","name":"Sao biển","category":"animals","src":"assets/coloring/sao-bien.svg"},
+  {"id":"animal-010","name":"Rồng con","category":"animals","src":"assets/coloring/rong-con.svg"},
+  {"id":"animal-011","name":"Hổ con","category":"animals","src":"assets/coloring/ho-con.svg"},
+  {"id":"animal-012","name":"Cá đuối","category":"animals","src":"assets/coloring/ca-duoi.svg"}
 ];
 
 export const categories = [

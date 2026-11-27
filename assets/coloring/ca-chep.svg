@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-label="ca-chep">
+<rect width="440" height="440" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#4a3f55;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#4a3f55;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#4a3f55}</style>
+<path class="region" data-region="1" d="M296 200C330 160 370 140 384 150C372 180 372 230 384 262C370 272 330 252 296 214Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M150 140C180 94 250 98 280 150Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M150 262Q170 312 214 278Z" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="200" cy="206" rx="120" ry="70" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="222" cy="180" rx="40" ry="25" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="270" cy="226" rx="24" ry="17" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="122" cy="178" rx="24" ry="18" transform="translate(20 20)"/>
+<path class="line" d="M176 222Q186 234 196 222M206 232Q216 244 226 232M232 196Q242 208 252 196" transform="translate(20 20)"/>
+<ellipse class="dot" cx="108" cy="200" rx="11" ry="13" transform="translate(20 20)"/>
+<circle fill="#fff" cx="111.8" cy="194.8" r="4.2" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="136" cy="230" rx="12" ry="8" transform="translate(20 20)"/>
+<path class="line" d="M82 216Q88 222 94 216" transform="translate(20 20)"/>
+<path class="line" d="M86 224Q70 238 74 256" transform="translate(20 20)"/>
+</svg>
