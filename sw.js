@@ -3,7 +3,7 @@
 // - Pictures (assets/): cache-first; a picture is stored the first time it is opened.
 // Bump APP_VERSION when app code changes, ART_VERSION after re-running tools/build.html or changing
 // pictures, so installed devices fetch the new files (pictures are not re-downloaded for code changes).
-const APP_VERSION = "14", ART_VERSION = "4";
+const APP_VERSION = "15", ART_VERSION = "5";
 const SHELL = `bvv-shell-v${APP_VERSION}`, ART = `bvv-art-v${ART_VERSION}`;
 // Every code module is listed, zones included, so all zones also work offline.
 const SHELL_FILES = ["./", "index.html", "styles.css", "app.js", "src/router.js", "src/pages.js",

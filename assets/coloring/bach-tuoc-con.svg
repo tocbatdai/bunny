@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-label="bach-tuoc-con">
+<rect width="440" height="440" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#4a3f55;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#4a3f55;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#4a3f55}</style>
+<path class="region" data-region="1" d="M101 232C101 300 75.2 316 57.2 350Q41.2 360 39.2 342C47.2 318 131 300 131 232Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M125 232C125 300 116 316 98 350Q82 360 80 342C88 318 155 300 155 232Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M149 232C149 300 156.8 316 138.8 350Q122.8 360 120.8 342C128.8 318 179 300 179 232Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M173 232C173 300 197.6 316 179.6 350Q163.6 360 161.6 342C169.6 318 203 300 203 232Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M197 232C197 300 202.4 316 220.4 350Q236.4 360 238.4 342C230.4 318 227 300 227 232Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M221 232C221 300 243.2 316 261.2 350Q277.2 360 279.2 342C271.2 318 251 300 251 232Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M245 232C245 300 284 316 302 350Q318 360 320 342C312 318 275 300 275 232Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M269 232C269 300 324.8 316 342.8 350Q358.8 360 360.8 342C352.8 318 299 300 299 232Z" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="200" cy="168" rx="100" ry="102" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="190" cy="104" r="12" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="236" cy="118" r="9" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="152" cy="120" r="8" transform="translate(20 20)"/>
+<ellipse class="dot" cx="164" cy="176" rx="14" ry="18" transform="translate(20 20)"/>
+<circle fill="#fff" cx="168.9" cy="168.8" r="5.3" transform="translate(20 20)"/>
+<ellipse class="dot" cx="236" cy="176" rx="14" ry="18" transform="translate(20 20)"/>
+<circle fill="#fff" cx="240.9" cy="168.8" r="5.3" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="138" cy="214" rx="14" ry="9" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="262" cy="214" rx="14" ry="9" transform="translate(20 20)"/>
+<path class="line" d="M180 222Q200 240 220 222" transform="translate(20 20)"/>
+</svg>

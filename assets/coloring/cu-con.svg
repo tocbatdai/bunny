@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-label="cu-con">
+<rect width="440" height="440" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#4a3f55;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#4a3f55;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#4a3f55}</style>
+<path class="region" data-region="1" d="M118 132L110 62L172 112Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M282 132L290 62L228 112Z" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="106" cy="246" rx="28" ry="66" transform="translate(20 20) rotate(12 106 246)"/>
+<ellipse class="region" data-region="1" cx="294" cy="246" rx="28" ry="66" transform="translate(20 20) rotate(-12 294 246)"/>
+<ellipse class="region" data-region="1" cx="200" cy="228" rx="100" ry="118" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="200" cy="276" rx="60" ry="66" transform="translate(20 20)"/>
+<path class="line" d="M176 250Q184 258 192 250M208 250Q216 258 224 250M184 280Q192 288 200 280Q208 288 216 280M190 310Q200 318 210 310" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="158" cy="168" r="40" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="242" cy="168" r="40" transform="translate(20 20)"/>
+<ellipse class="dot" cx="158" cy="170" rx="16" ry="20" transform="translate(20 20)"/>
+<circle fill="#fff" cx="163.6" cy="162" r="6.1" transform="translate(20 20)"/>
+<ellipse class="dot" cx="242" cy="170" rx="16" ry="20" transform="translate(20 20)"/>
+<circle fill="#fff" cx="247.6" cy="162" r="6.1" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M188 200H212L200 226Z" transform="translate(20 20)"/>
+<rect class="region" data-region="1" x="50" y="334" width="300" height="22" rx="11" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="172" cy="338" rx="16" ry="9" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="228" cy="338" rx="16" ry="9" transform="translate(20 20)"/>
+</svg>

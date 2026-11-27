@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-label="ca-sau-con">
+<rect width="440" height="440" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#4a3f55;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#4a3f55;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#4a3f55}</style>
+<path class="region" data-region="1" d="M300 290C340 292 372 272 390 238C386 284 352 330 290 336Z" transform="translate(20 20)"/>
+<rect class="region" data-region="1" x="160" y="316" width="34" height="54" rx="12" transform="translate(20 20)"/>
+<rect class="region" data-region="1" x="262" y="316" width="34" height="54" rx="12" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="222" cy="298" rx="104" ry="46" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="222" cy="320" rx="74" ry="18" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="186" cy="258" r="11" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="220" cy="254" r="11" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="254" cy="256" r="11" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="288" cy="264" r="10" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M152 278L48 240L54 302L152 292Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M156 292L54 302C38 306 40 324 58 326C92 328 132 322 168 312Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M166 246C124 228 70 204 40 210C26 216 30 236 48 240L154 282Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M60.7 245L65.5 259.9L70.3 248.8Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M86.2 255.1L90.9 270L95.7 258.9Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M111.6 265.2L116.4 280.1L121.1 269Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M66.2 300.8L70.8 287.4L75.4 299.9Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M92.8 298.2L97.3 284.8L101.9 297.3Z" transform="translate(20 20)"/>
+<path class="region" data-region="1" d="M119.3 295.6L123.9 282.1L128.5 294.7Z" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="144" cy="232" r="22" transform="translate(20 20)"/>
+<ellipse class="dot" cx="146" cy="230" rx="10" ry="13" transform="translate(20 20)"/>
+<circle fill="#fff" cx="149.5" cy="224.8" r="3.8" transform="translate(20 20)"/>
+<ellipse class="dot" cx="50" cy="220" rx="4" ry="5" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="116" cy="252" rx="11" ry="7" transform="translate(20 20)"/>
+</svg>

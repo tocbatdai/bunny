@@ -604,4 +604,420 @@ export const ANIMALS = [
       <path d="M40 352Q70 332 100 352T160 352T220 352T280 352T340 352" fill="none" stroke="#6cc7f0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>`),
   },
   // ---- end generated ----
+  // ---- generated: more animals (gen_animals3.py) ----
+  {
+    id: "ngong", name: "Con ngỗng", say: "Con ngỗng. Quác quác!",
+    svg: () => svg(`
+      <path d="M98 270L58 232Q66 274 92 300Z" fill="#fff" ${K}/>
+      <path d="M170 336L164 374M164 374H144M164 374L156 362M216 336L222 374M222 374H242M222 374L230 362" fill="none" stroke="#ff9f43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="190" cy="282" rx="108" ry="66" fill="#fff" ${K}/>
+      <path d="M236 252C238 200 252 150 258 112L300 112C298 156 284 210 290 256Z" fill="#fff" ${K}/>
+      <path d="M124 272C146 236 222 236 252 272C222 304 154 304 124 272Z" fill="#eceff1" ${K}/>
+      <path d="M150 272Q170 284 190 272M190 280Q210 292 230 280" fill="none" stroke="#b0bec5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="282" cy="106" r="42" fill="#fff" ${K}/>
+      <path d="M318 92Q354 94 364 110Q352 126 318 122Z" fill="#ff9f43" ${K}/>
+      <path d="M322 108H352" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="294" cy="96" rx="9" ry="12" fill="${INK}"/>
+      <circle cx="297.1" cy="91.2" r="3.4" fill="#fff"/>
+      <ellipse cx="272" cy="124" rx="11" ry="7" fill="#f8a5c2"/>`),
+  },
+  {
+    id: "chuot", name: "Con chuột", say: "Con chuột. Chít chít!",
+    svg: () => svg(`
+      <path d="M262 340C330 352 364 304 336 268Q322 252 312 266" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="200" cy="296" rx="78" ry="74" fill="#b0bec5" ${K}/>
+      <ellipse cx="200" cy="312" rx="42" ry="46" fill="#eceff1" ${K}/>
+      <ellipse cx="168" cy="366" rx="26" ry="14" fill="#f8bbd0" ${K}/>
+      <ellipse cx="232" cy="366" rx="26" ry="14" fill="#f8bbd0" ${K}/>
+      <circle cx="122" cy="116" r="48" fill="#b0bec5" ${K}/>
+      <circle cx="122" cy="116" r="29" fill="#f8bbd0"/>
+      <circle cx="278" cy="116" r="48" fill="#b0bec5" ${K}/>
+      <circle cx="278" cy="116" r="29" fill="#f8bbd0"/>
+      <ellipse cx="200" cy="188" rx="86" ry="74" fill="#b0bec5" ${K}/>
+      <ellipse cx="166" cy="180" rx="12" ry="15" fill="${INK}"/>
+      <circle cx="170.2" cy="174" r="4.6" fill="#fff"/>
+      <ellipse cx="234" cy="180" rx="12" ry="15" fill="${INK}"/>
+      <circle cx="238.2" cy="174" r="4.6" fill="#fff"/>
+      <ellipse cx="138" cy="216" rx="14" ry="9" fill="#f8a5c2"/>
+      <ellipse cx="262" cy="216" rx="14" ry="9" fill="#f8a5c2"/>
+      <circle cx="200" cy="210" r="10" fill="#ef7a9a" ${K}/>
+      <path d="M190 228Q200 236 210 228" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M122 204L84 196M122 218L86 228M278 204L316 196M278 218L314 228" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "ngua-van", name: "Con ngựa vằn", say: "Con ngựa vằn. Ngựa vằn có sọc đen trắng!",
+    svg: () => svg(`
+      <path d="M326 238C368 244 382 300 358 344C346 318 340 290 320 272Z" fill="#5d5566" ${K}/>
+      <rect x="256" y="286" width="34" height="90" rx="12" fill="#fff" ${K}/>
+      <rect x="292" y="286" width="34" height="90" rx="12" fill="#fff" ${K}/>
+      <path d="M259 362H287M295 362H323" fill="none" stroke="${INK}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="136" y="290" width="34" height="88" rx="12" fill="#fff" ${K}/>
+      <rect x="180" y="290" width="34" height="88" rx="12" fill="#fff" ${K}/>
+      <path d="M139 364H167M183 364H211" fill="none" stroke="${INK}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="226" cy="258" rx="108" ry="58" fill="#fff" ${K}/>
+      <path d="M196 210Q206 240 194 270M230 202Q240 240 228 284M264 204Q274 240 262 280M298 214Q306 240 296 268M144 320H168M188 320H212M262 318H286M298 318H322" fill="none" stroke="${INK}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M124 236L126 140Q146 108 184 124L210 230Z" fill="#fff" ${K}/>
+      <path d="M136 168Q160 166 178 176M134 198Q162 196 190 204" fill="none" stroke="${INK}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M136 90C178 80 214 132 218 214L198 222C194 164 172 124 136 110Z" fill="#5d5566" ${K}/>
+      <path d="M104 98L110 56L136 88Z" fill="#fff" ${K}/>
+      <path d="M130 92L146 54L160 92Z" fill="#fff" ${K}/>
+      <ellipse cx="122" cy="128" rx="52" ry="42" transform="rotate(-20 122 128)" fill="#fff" ${K}/>
+      <path d="M110 98Q118 108 116 118M136 92Q144 104 144 114" fill="none" stroke="${INK}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="86" cy="158" rx="38" ry="28" fill="#cfd8dc" ${K}/>
+      <ellipse cx="126" cy="126" rx="11" ry="14" fill="${INK}"/>
+      <circle cx="129.8" cy="120.4" r="4.2" fill="#fff"/>
+      <ellipse cx="116" cy="160" rx="12" ry="8" fill="#f8a5c2"/>
+      <ellipse cx="72" cy="152" rx="5" ry="7" fill="${INK}"/>
+      <path d="M66 172Q80 182 98 174" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "gau-truc", name: "Con gấu trúc", say: "Con gấu trúc. Gấu trúc thích ăn lá tre!",
+    svg: () => svg(`
+      <circle cx="128" cy="106" r="30" fill="#4f4757" ${K}/>
+      <circle cx="272" cy="106" r="30" fill="#4f4757" ${K}/>
+      <ellipse cx="128" cy="290" rx="26" ry="40" transform="rotate(25 128 290)" fill="#4f4757" ${K}/>
+      <ellipse cx="200" cy="294" rx="84" ry="78" fill="#fff" ${K}/>
+      <ellipse cx="164" cy="364" rx="32" ry="18" fill="#4f4757" ${K}/>
+      <ellipse cx="236" cy="364" rx="32" ry="18" fill="#4f4757" ${K}/>
+      <rect x="282" y="196" width="18" height="160" rx="8" fill="#8bc34a" ${K}/>
+      <path d="M284 250H298M284 304H298" fill="none" stroke="#558b2f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="312" cy="192" rx="28" ry="10" transform="rotate(-30 312 192)" fill="#66bb6a" ${K}/>
+      <ellipse cx="270" cy="186" rx="26" ry="9" transform="rotate(30 270 186)" fill="#66bb6a" ${K}/>
+      <ellipse cx="272" cy="290" rx="26" ry="40" transform="rotate(-25 272 290)" fill="#4f4757" ${K}/>
+      <ellipse cx="200" cy="176" rx="98" ry="82" fill="#fff" ${K}/>
+      <ellipse cx="160" cy="172" rx="26" ry="32" transform="rotate(30 160 172)" fill="#4f4757" ${K}/>
+      <ellipse cx="240" cy="172" rx="26" ry="32" transform="rotate(-30 240 172)" fill="#4f4757" ${K}/>
+      <circle cx="162" cy="168" r="11" fill="#fff" ${K}/>
+      <circle cx="238" cy="168" r="11" fill="#fff" ${K}/>
+      <ellipse cx="163" cy="169" rx="6" ry="7" fill="${INK}"/>
+      <circle cx="165.1" cy="166.2" r="2.3" fill="#fff"/>
+      <ellipse cx="237" cy="169" rx="6" ry="7" fill="${INK}"/>
+      <circle cx="239.1" cy="166.2" r="2.3" fill="#fff"/>
+      <ellipse cx="200" cy="206" rx="14" ry="9" fill="${INK}"/>
+      <path d="M200 214V222M186 224Q193 232 200 222Q207 232 214 224" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="130" cy="214" rx="13" ry="8" fill="#f8a5c2"/>
+      <ellipse cx="270" cy="214" rx="13" ry="8" fill="#f8a5c2"/>`),
+  },
+  {
+    id: "ca-sau", name: "Con cá sấu", say: "Con cá sấu. Cá sấu há miệng thật to!",
+    svg: () => svg(`
+      <path d="M300 290C340 292 372 272 390 238C386 284 352 330 290 336Z" fill="#66bb6a" ${K}/>
+      <rect x="160" y="316" width="34" height="54" rx="12" fill="#66bb6a" ${K}/>
+      <rect x="262" y="316" width="34" height="54" rx="12" fill="#66bb6a" ${K}/>
+      <ellipse cx="222" cy="298" rx="104" ry="46" fill="#66bb6a" ${K}/>
+      <ellipse cx="222" cy="320" rx="74" ry="18" fill="#c5e1a5" ${K}/>
+      <circle cx="186" cy="258" r="11" fill="#43a047" ${K}/>
+      <circle cx="220" cy="254" r="11" fill="#43a047" ${K}/>
+      <circle cx="254" cy="256" r="11" fill="#43a047" ${K}/>
+      <circle cx="288" cy="264" r="10" fill="#43a047" ${K}/>
+      <path d="M152 278L48 240L54 302L152 292Z" fill="#ef7a9a" ${K}/>
+      <path d="M156 292L54 302C38 306 40 324 58 326C92 328 132 322 168 312Z" fill="#66bb6a" ${K}/>
+      <path d="M166 246C124 228 70 204 40 210C26 216 30 236 48 240L154 282Z" fill="#66bb6a" ${K}/>
+      <path d="M60.7 245L65.5 259.9L70.3 248.8Z" fill="#fff" ${K}/>
+      <path d="M86.2 255.1L90.9 270L95.7 258.9Z" fill="#fff" ${K}/>
+      <path d="M111.6 265.2L116.4 280.1L121.1 269Z" fill="#fff" ${K}/>
+      <path d="M66.2 300.8L70.8 287.4L75.4 299.9Z" fill="#fff" ${K}/>
+      <path d="M92.8 298.2L97.3 284.8L101.9 297.3Z" fill="#fff" ${K}/>
+      <path d="M119.3 295.6L123.9 282.1L128.5 294.7Z" fill="#fff" ${K}/>
+      <circle cx="144" cy="232" r="22" fill="#66bb6a" ${K}/>
+      <ellipse cx="146" cy="230" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="149.5" cy="224.8" r="3.8" fill="#fff"/>
+      <ellipse cx="50" cy="220" rx="4" ry="5" fill="${INK}"/>
+      <ellipse cx="116" cy="252" rx="11" ry="7" fill="#f8a5c2"/>`),
+  },
+  {
+    id: "ran", name: "Con rắn", say: "Con rắn. Xì xì!",
+    svg: () => svg(`
+      <path d="M296 346Q334 344 346 318Q330 332 300 330Z" fill="#9ccc65" ${K}/>
+      <ellipse cx="200" cy="338" rx="112" ry="34" fill="#9ccc65" ${K}/>
+      <ellipse cx="130" cy="338" rx="12" ry="8" fill="#7cb342"/>
+      <ellipse cx="200" cy="350" rx="12" ry="8" fill="#7cb342"/>
+      <ellipse cx="270" cy="338" rx="12" ry="8" fill="#7cb342"/>
+      <ellipse cx="200" cy="294" rx="88" ry="30" fill="#9ccc65" ${K}/>
+      <ellipse cx="150" cy="298" rx="11" ry="7" fill="#7cb342"/>
+      <ellipse cx="250" cy="298" rx="11" ry="7" fill="#7cb342"/>
+      <ellipse cx="200" cy="256" rx="64" ry="26" fill="#9ccc65" ${K}/>
+      <path d="M174 256C168 214 184 184 200 170L240 178C226 200 218 222 228 256Z" fill="#9ccc65" ${K}/>
+      <ellipse cx="206" cy="226" rx="10" ry="7" fill="#7cb342"/>
+      <ellipse cx="216" cy="140" rx="58" ry="44" fill="#9ccc65" ${K}/>
+      <path d="M216 172V196M216 196L206 208M216 196L226 208" fill="none" stroke="#ef5350" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="196" cy="130" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="199.5" cy="124.8" r="3.8" fill="#fff"/>
+      <ellipse cx="238" cy="130" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="241.5" cy="124.8" r="3.8" fill="#fff"/>
+      <ellipse cx="178" cy="158" rx="11" ry="7" fill="#f8a5c2"/>
+      <ellipse cx="256" cy="158" rx="11" ry="7" fill="#f8a5c2"/>
+      <path d="M200 166Q216 176 232 166" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "ha-ma", name: "Con hà mã", say: "Con hà mã. Hà mã thích ngâm mình trong nước!",
+    svg: () => svg(`
+      <rect x="132" y="330" width="32" height="48" rx="12" fill="#a99bd1" ${K}/>
+      <rect x="172" y="330" width="32" height="48" rx="12" fill="#a99bd1" ${K}/>
+      <rect x="196" y="330" width="32" height="48" rx="12" fill="#a99bd1" ${K}/>
+      <rect x="236" y="330" width="32" height="48" rx="12" fill="#a99bd1" ${K}/>
+      <ellipse cx="200" cy="296" rx="106" ry="70" fill="#a99bd1" ${K}/>
+      <ellipse cx="144" cy="102" rx="18" ry="14" fill="#a99bd1" ${K}/>
+      <ellipse cx="144" cy="102" rx="8" ry="6" fill="#f8bbd0"/>
+      <ellipse cx="256" cy="102" rx="18" ry="14" fill="#a99bd1" ${K}/>
+      <ellipse cx="256" cy="102" rx="8" ry="6" fill="#f8bbd0"/>
+      <ellipse cx="200" cy="150" rx="72" ry="58" fill="#a99bd1" ${K}/>
+      <ellipse cx="170" cy="140" rx="12" ry="15" fill="${INK}"/>
+      <circle cx="174.2" cy="134" r="4.6" fill="#fff"/>
+      <ellipse cx="230" cy="140" rx="12" ry="15" fill="${INK}"/>
+      <circle cx="234.2" cy="134" r="4.6" fill="#fff"/>
+      <ellipse cx="200" cy="222" rx="98" ry="58" fill="#c5b9e6" ${K}/>
+      <ellipse cx="168" cy="204" rx="9" ry="6" fill="${INK}"/>
+      <ellipse cx="232" cy="204" rx="9" ry="6" fill="${INK}"/>
+      <path d="M138 238Q200 268 262 238" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="164" y="246" width="14" height="14" rx="3" fill="#fff" ${K}/>
+      <rect x="222" y="246" width="14" height="14" rx="3" fill="#fff" ${K}/>
+      <ellipse cx="122" cy="226" rx="14" ry="9" fill="#f8a5c2"/>
+      <ellipse cx="278" cy="226" rx="14" ry="9" fill="#f8a5c2"/>
+      <path d="M40 372Q70 356 100 372M300 372Q330 356 360 372" fill="none" stroke="#6cc7f0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "te-giac", name: "Con tê giác", say: "Con tê giác. Tê giác có sừng trên mũi!",
+    svg: () => svg(`
+      <rect x="130" y="320" width="34" height="58" rx="10" fill="#9eaab5" ${K}/>
+      <rect x="170" y="320" width="34" height="58" rx="10" fill="#9eaab5" ${K}/>
+      <rect x="214" y="320" width="34" height="58" rx="10" fill="#9eaab5" ${K}/>
+      <rect x="254" y="320" width="34" height="58" rx="10" fill="#9eaab5" ${K}/>
+      <path d="M133 364H161M173 364H201M217 364H245M257 364H285" fill="none" stroke="#6b7680" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="200" cy="292" rx="104" ry="70" fill="#9eaab5" ${K}/>
+      <path d="M128 266Q140 290 132 314M272 266Q260 290 268 314" fill="none" stroke="#7b8794" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="136" cy="112" rx="16" ry="28" transform="rotate(-25 136 112)" fill="#9eaab5" ${K}/>
+      <ellipse cx="264" cy="112" rx="16" ry="28" transform="rotate(25 264 112)" fill="#9eaab5" ${K}/>
+      <ellipse cx="200" cy="176" rx="76" ry="72" fill="#9eaab5" ${K}/>
+      <ellipse cx="200" cy="226" rx="54" ry="36" fill="#bcc6cf" ${K}/>
+      <path d="M182 212Q190 152 204 128Q214 160 220 212Z" fill="#f5e6c8" ${K}/>
+      <path d="M190 156Q196 132 204 120Q208 138 210 156Z" fill="#f5e6c8" ${K}/>
+      <ellipse cx="162" cy="166" rx="12" ry="15" fill="${INK}"/>
+      <circle cx="166.2" cy="160" r="4.6" fill="#fff"/>
+      <ellipse cx="238" cy="166" rx="12" ry="15" fill="${INK}"/>
+      <circle cx="242.2" cy="160" r="4.6" fill="#fff"/>
+      <ellipse cx="138" cy="204" rx="14" ry="9" fill="#f8a5c2"/>
+      <ellipse cx="262" cy="204" rx="14" ry="9" fill="#f8a5c2"/>
+      <ellipse cx="182" cy="234" rx="5" ry="7" fill="${INK}"/>
+      <ellipse cx="218" cy="234" rx="5" ry="7" fill="${INK}"/>
+      <path d="M184 250Q200 258 216 250" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "chuot-tui", name: "Con chuột túi", say: "Con chuột túi. Chuột túi nhảy tưng tưng!",
+    svg: () => svg(`
+      <path d="M244 328C300 348 352 358 388 370C352 380 290 376 236 358Z" fill="#d4a373" ${K}/>
+      <ellipse cx="222" cy="286" rx="72" ry="86" fill="#d4a373" ${K}/>
+      <ellipse cx="200" cy="366" rx="64" ry="14" fill="#d4a373" ${K}/>
+      <ellipse cx="196" cy="210" rx="34" ry="30" fill="#d4a373" ${K}/>
+      <ellipse cx="188" cy="96" rx="14" ry="38" transform="rotate(12 188 96)" fill="#d4a373" ${K}/>
+      <ellipse cx="188" cy="100" rx="6" ry="24" transform="rotate(12 188 100)" fill="#f8bbd0"/>
+      <ellipse cx="214" cy="106" rx="14" ry="36" transform="rotate(26 214 106)" fill="#d4a373" ${K}/>
+      <ellipse cx="170" cy="160" rx="52" ry="44" fill="#d4a373" ${K}/>
+      <ellipse cx="126" cy="176" rx="36" ry="24" fill="#efd3b1" ${K}/>
+      <ellipse cx="168" cy="150" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="171.5" cy="144.8" r="3.8" fill="#fff"/>
+      <ellipse cx="156" cy="184" rx="11" ry="7" fill="#f8a5c2"/>
+      <ellipse cx="96" cy="170" rx="7" ry="6" fill="${INK}"/>
+      <path d="M104 188Q116 196 130 188" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="210" cy="282" rx="8" ry="14" transform="rotate(-15 210 282)" fill="#d4a373" ${K}/>
+      <ellipse cx="234" cy="282" rx="8" ry="14" transform="rotate(15 234 282)" fill="#d4a373" ${K}/>
+      <circle cx="222" cy="302" r="20" fill="#d4a373" ${K}/>
+      <ellipse cx="214" cy="300" rx="3.5" ry="4.5" fill="${INK}"/>
+      <ellipse cx="230" cy="300" rx="3.5" ry="4.5" fill="${INK}"/>
+      <path d="M178 304Q222 336 266 304Q266 352 222 358Q178 352 178 304Z" fill="#efd3b1" ${K}/>
+      <ellipse cx="156" cy="264" rx="12" ry="30" transform="rotate(30 156 264)" fill="#d4a373" ${K}/>`),
+  },
+  {
+    id: "vet", name: "Con vẹt", say: "Con vẹt. Vẹt biết nói!",
+    svg: () => svg(`
+      <path d="M226 300L280 380L248 386L210 316Z" fill="#42a5f5" ${K}/>
+      <path d="M210 304L238 386L208 386L194 318Z" fill="#ffd54f" ${K}/>
+      <rect x="40" y="318" width="320" height="22" rx="11" fill="#a1704a" ${K}/>
+      <ellipse cx="196" cy="236" rx="64" ry="88" fill="#ef5350" ${K}/>
+      <path d="M214 190C268 196 288 268 254 322C226 308 206 262 214 190Z" fill="#66bb6a" ${K}/>
+      <path d="M232 236Q250 252 256 276M226 262Q240 280 244 300" fill="none" stroke="#42a5f5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="184" cy="138" r="54" fill="#ef5350" ${K}/>
+      <ellipse cx="160" cy="140" rx="24" ry="28" fill="#fff" ${K}/>
+      <path d="M140 118C108 114 94 140 102 170C110 158 124 154 142 154Z" fill="#ffe082" ${K}/>
+      <path d="M140 154Q124 160 128 174Q140 172 148 160Z" fill="#ffe082" ${K}/>
+      <ellipse cx="162" cy="134" rx="9" ry="12" fill="${INK}"/>
+      <circle cx="165.2" cy="129.2" r="3.4" fill="#fff"/>
+      <ellipse cx="182" cy="326" rx="14" ry="9" fill="#9e9e9e" ${K}/>
+      <ellipse cx="212" cy="326" rx="14" ry="9" fill="#9e9e9e" ${K}/>`),
+  },
+  {
+    id: "cu", name: "Con cú", say: "Con cú. Cú cú! Cú thức ban đêm!",
+    svg: () => svg(`
+      <path d="M118 132L110 62L172 112Z" fill="#8d6e63" ${K}/>
+      <path d="M282 132L290 62L228 112Z" fill="#8d6e63" ${K}/>
+      <ellipse cx="106" cy="246" rx="28" ry="66" transform="rotate(12 106 246)" fill="#6d4c41" ${K}/>
+      <ellipse cx="294" cy="246" rx="28" ry="66" transform="rotate(-12 294 246)" fill="#6d4c41" ${K}/>
+      <ellipse cx="200" cy="228" rx="100" ry="118" fill="#8d6e63" ${K}/>
+      <ellipse cx="200" cy="276" rx="60" ry="66" fill="#d7ccc8" ${K}/>
+      <path d="M176 250Q184 258 192 250M208 250Q216 258 224 250M184 280Q192 288 200 280Q208 288 216 280M190 310Q200 318 210 310" fill="none" stroke="#6d4c41" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="158" cy="168" r="40" fill="#fff3e0" ${K}/>
+      <circle cx="242" cy="168" r="40" fill="#fff3e0" ${K}/>
+      <ellipse cx="158" cy="170" rx="16" ry="20" fill="${INK}"/>
+      <circle cx="163.6" cy="162" r="6.1" fill="#fff"/>
+      <ellipse cx="242" cy="170" rx="16" ry="20" fill="${INK}"/>
+      <circle cx="247.6" cy="162" r="6.1" fill="#fff"/>
+      <path d="M188 200H212L200 226Z" fill="#ffb74d" ${K}/>
+      <rect x="50" y="334" width="300" height="22" rx="11" fill="#a1704a" ${K}/>
+      <ellipse cx="172" cy="338" rx="16" ry="9" fill="#ff9f43" ${K}/>
+      <ellipse cx="228" cy="338" rx="16" ry="9" fill="#ff9f43" ${K}/>`),
+  },
+  {
+    id: "cong", name: "Con công", say: "Con công. Công xòe đuôi thật đẹp!",
+    svg: () => svg(`
+      <path d="M24 290Q8.1 254.7 30 226.3Q21.1 186.4 47.6 167Q46.4 125.3 75.5 116.1Q82.1 75.3 112 77Q125.9 40 154.4 52.4Q174.7 21.7 200 44Q225.3 21.7 245.6 52.4Q274.1 40 288 77Q317.9 75.3 324.5 116.1Q353.6 125.3 352.4 167Q378.9 186.4 370 226.3Q391.9 254.7 376 290L200 320Z" fill="#26a69a" ${K}/>
+      <ellipse cx="78.3" cy="229.4" rx="18" ry="20" fill="#ffd54f" ${K}/>
+      <ellipse cx="78.3" cy="229.4" rx="8" ry="10" fill="#1e88e5" ${K}/>
+      <ellipse cx="104.9" cy="158.9" rx="18" ry="20" fill="#ffd54f" ${K}/>
+      <ellipse cx="104.9" cy="158.9" rx="8" ry="10" fill="#1e88e5" ${K}/>
+      <ellipse cx="147.9" cy="110.9" rx="18" ry="20" fill="#ffd54f" ${K}/>
+      <ellipse cx="147.9" cy="110.9" rx="8" ry="10" fill="#1e88e5" ${K}/>
+      <ellipse cx="200" cy="94" rx="18" ry="20" fill="#ffd54f" ${K}/>
+      <ellipse cx="200" cy="94" rx="8" ry="10" fill="#1e88e5" ${K}/>
+      <ellipse cx="252.1" cy="110.9" rx="18" ry="20" fill="#ffd54f" ${K}/>
+      <ellipse cx="252.1" cy="110.9" rx="8" ry="10" fill="#1e88e5" ${K}/>
+      <ellipse cx="295.1" cy="158.9" rx="18" ry="20" fill="#ffd54f" ${K}/>
+      <ellipse cx="295.1" cy="158.9" rx="8" ry="10" fill="#1e88e5" ${K}/>
+      <ellipse cx="321.7" cy="229.4" rx="18" ry="20" fill="#ffd54f" ${K}/>
+      <ellipse cx="321.7" cy="229.4" rx="8" ry="10" fill="#1e88e5" ${K}/>
+      <path d="M186 330L180 376M180 376H164M180 376L172 366M214 330L220 376M220 376H236M220 376L228 366" fill="none" stroke="#ff9f43" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="200" cy="272" rx="46" ry="70" fill="#1e88e5" ${K}/>
+      <path d="M188 138L180 104M200 136V100M212 138L220 104" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="180" cy="100" r="7" fill="#1e88e5" ${K}/>
+      <circle cx="200" cy="96" r="7" fill="#1e88e5" ${K}/>
+      <circle cx="220" cy="100" r="7" fill="#1e88e5" ${K}/>
+      <circle cx="200" cy="172" r="34" fill="#1e88e5" ${K}/>
+      <ellipse cx="187" cy="166" rx="7" ry="9" fill="${INK}"/>
+      <circle cx="189.4" cy="162.4" r="2.7" fill="#fff"/>
+      <ellipse cx="213" cy="166" rx="7" ry="9" fill="${INK}"/>
+      <circle cx="215.4" cy="162.4" r="2.7" fill="#fff"/>
+      <path d="M193 180H207L200 194Z" fill="#ffb74d" ${K}/>
+      <ellipse cx="178" cy="186" rx="8" ry="5" fill="#f8a5c2"/>
+      <ellipse cx="222" cy="186" rx="8" ry="5" fill="#f8a5c2"/>`),
+  },
+  {
+    id: "ong", name: "Con ong", say: "Con ong. Vo ve! Ong làm mật!",
+    svg: () => svg(`
+      <path d="M318 250L354 262L318 274Z" fill="#5d4037" ${K}/>
+      <ellipse cx="220" cy="262" rx="104" ry="78" fill="#ffd54f" ${K}/>
+      <path d="M206 198Q220 262 206 326M262 204Q274 262 262 320" fill="none" stroke="${INK}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="206" cy="164" rx="34" ry="52" transform="rotate(-20 206 164)" fill="#e3f2fd" ${K}/>
+      <ellipse cx="258" cy="172" rx="30" ry="44" transform="rotate(20 258 172)" fill="#e3f2fd" ${K}/>
+      <path d="M100 182Q88 152 74 140M136 178Q142 148 156 134" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="74" cy="138" r="8" fill="${INK}"/>
+      <circle cx="156" cy="132" r="8" fill="${INK}"/>
+      <circle cx="120" cy="240" r="62" fill="#ffd54f" ${K}/>
+      <ellipse cx="100" cy="232" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="103.5" cy="226.8" r="3.8" fill="#fff"/>
+      <ellipse cx="142" cy="232" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="145.5" cy="226.8" r="3.8" fill="#fff"/>
+      <ellipse cx="86" cy="260" rx="11" ry="7" fill="#f8a5c2"/>
+      <ellipse cx="158" cy="260" rx="11" ry="7" fill="#f8a5c2"/>
+      <path d="M108 262Q121 274 134 262" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "kien", name: "Con kiến", say: "Con kiến. Kiến tha mồi về tổ!",
+    svg: () => svg(`
+      <path d="M182 272L150 330L132 340M200 282L196 346L180 358M218 274L244 334L262 346" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M190 268L170 316M210 270L222 320" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="290" cy="262" rx="74" ry="58" fill="#ef6c3a" ${K}/>
+      <path d="M262 214Q270 262 262 310M304 208Q312 262 304 316" fill="none" stroke="#d4541f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="198" cy="256" rx="38" ry="30" fill="#ef6c3a" ${K}/>
+      <circle cx="214" cy="212" r="24" fill="#fff59d" ${K}/>
+      <path d="M106 168Q92 122 68 110M134 166Q146 120 170 104" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="66" cy="108" r="8" fill="${INK}"/>
+      <circle cx="172" cy="102" r="8" fill="${INK}"/>
+      <circle cx="120" cy="216" r="54" fill="#ef6c3a" ${K}/>
+      <ellipse cx="102" cy="208" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="105.5" cy="202.8" r="3.8" fill="#fff"/>
+      <ellipse cx="140" cy="208" rx="10" ry="13" fill="${INK}"/>
+      <circle cx="143.5" cy="202.8" r="3.8" fill="#fff"/>
+      <ellipse cx="88" cy="236" rx="10" ry="7" fill="#f8a5c2"/>
+      <ellipse cx="154" cy="236" rx="10" ry="7" fill="#f8a5c2"/>
+      <path d="M108 240Q121 252 134 240" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "oc-sen", name: "Con ốc sên", say: "Con ốc sên. Ốc sên bò chậm chậm!",
+    svg: () => svg(`
+      <path d="M126 214L110 158M150 212L162 154" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 352C60 300 92 284 108 236C118 202 160 200 168 236C174 282 172 318 200 338L332 338C352 338 358 356 342 364H82C66 364 60 362 60 352Z" fill="#ffcc80" ${K}/>
+      <circle cx="110" cy="152" r="14" fill="#ffcc80" ${K}/>
+      <circle cx="162" cy="148" r="14" fill="#ffcc80" ${K}/>
+      <ellipse cx="110" cy="152" rx="6" ry="8" fill="${INK}"/>
+      <circle cx="112.1" cy="148.8" r="2.3" fill="#fff"/>
+      <ellipse cx="162" cy="148" rx="6" ry="8" fill="${INK}"/>
+      <circle cx="164.1" cy="144.8" r="2.3" fill="#fff"/>
+      <circle cx="258" cy="258" r="84" fill="#ba68c8" ${K}/>
+      <path d="M258 258A12 12 0 1 1 282 258A30 30 0 1 1 222 258A48 48 0 1 1 318 262A66 66 0 1 1 194 270" fill="none" stroke="#8e44ad" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="152" cy="264" rx="11" ry="7" fill="#f8a5c2"/>
+      <path d="M118 268Q132 278 146 268" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "ca-voi", name: "Con cá voi", say: "Con cá voi. Cá voi to nhất biển!",
+    svg: () => svg(`
+      <path d="M120 166Q112 130 92 120M120 166Q120 120 120 100M120 166Q130 130 150 120" fill="none" stroke="#6cc7f0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="86" cy="108" r="8" fill="#e1f5fe" ${K}/>
+      <circle cx="156" cy="108" r="8" fill="#e1f5fe" ${K}/>
+      <path d="M318 252C340 230 352 192 382 172C388 198 376 216 364 228C380 230 392 246 394 268C368 264 344 270 326 282Z" fill="#5c8fd6" ${K}/>
+      <ellipse cx="190" cy="262" rx="150" ry="92" fill="#5c8fd6" ${K}/>
+      <path d="M52 288Q190 360 326 288Q304 350 190 354Q76 350 52 288Z" fill="#dbe9fb" ${K}/>
+      <path d="M110 318L116 334M150 330L154 346M190 334V350M230 330L226 346M270 318L264 334" fill="none" stroke="#a9c6ee" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M168 298Q186 342 230 334Q212 312 194 296Z" fill="#4a78bd" ${K}/>
+      <ellipse cx="108" cy="238" rx="12" ry="15" fill="${INK}"/>
+      <circle cx="112.2" cy="232" r="4.6" fill="#fff"/>
+      <ellipse cx="126" cy="272" rx="13" ry="8" fill="#f8a5c2"/>
+      <path d="M56 276Q88 300 132 290" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M40 380Q70 362 100 380T160 380T220 380T280 380T340 380" fill="none" stroke="#6cc7f0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "bach-tuoc", name: "Con bạch tuộc", say: "Con bạch tuộc. Bạch tuộc có tám cái chân!",
+    svg: () => svg(`
+      <path d="M101 232C101 300 75.2 316 57.2 350Q41.2 360 39.2 342C47.2 318 131 300 131 232Z" fill="#ff8a80" ${K}/>
+      <path d="M125 232C125 300 116 316 98 350Q82 360 80 342C88 318 155 300 155 232Z" fill="#ff8a80" ${K}/>
+      <path d="M149 232C149 300 156.8 316 138.8 350Q122.8 360 120.8 342C128.8 318 179 300 179 232Z" fill="#ff8a80" ${K}/>
+      <path d="M173 232C173 300 197.6 316 179.6 350Q163.6 360 161.6 342C169.6 318 203 300 203 232Z" fill="#ff8a80" ${K}/>
+      <path d="M197 232C197 300 202.4 316 220.4 350Q236.4 360 238.4 342C230.4 318 227 300 227 232Z" fill="#ff8a80" ${K}/>
+      <path d="M221 232C221 300 243.2 316 261.2 350Q277.2 360 279.2 342C271.2 318 251 300 251 232Z" fill="#ff8a80" ${K}/>
+      <path d="M245 232C245 300 284 316 302 350Q318 360 320 342C312 318 275 300 275 232Z" fill="#ff8a80" ${K}/>
+      <path d="M269 232C269 300 324.8 316 342.8 350Q358.8 360 360.8 342C352.8 318 299 300 299 232Z" fill="#ff8a80" ${K}/>
+      <ellipse cx="200" cy="168" rx="100" ry="102" fill="#ff8a80" ${K}/>
+      <circle cx="190" cy="104" r="12" fill="#ffccbc"/>
+      <circle cx="236" cy="118" r="9" fill="#ffccbc"/>
+      <circle cx="152" cy="120" r="8" fill="#ffccbc"/>
+      <ellipse cx="164" cy="176" rx="14" ry="18" fill="${INK}"/>
+      <circle cx="168.9" cy="168.8" r="5.3" fill="#fff"/>
+      <ellipse cx="236" cy="176" rx="14" ry="18" fill="${INK}"/>
+      <circle cx="240.9" cy="168.8" r="5.3" fill="#fff"/>
+      <ellipse cx="138" cy="214" rx="14" ry="9" fill="#f8a5c2"/>
+      <ellipse cx="262" cy="214" rx="14" ry="9" fill="#f8a5c2"/>
+      <path d="M180 222Q200 240 220 222" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  {
+    id: "cua", name: "Con cua", say: "Con cua. Cua bò ngang!",
+    svg: () => svg(`
+      <path d="M120 270L72 250L58 280M114 296L68 302L60 332M126 320L86 342L84 370" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M280 270L328 250L342 280M286 296L332 302L340 332M274 320L314 342L316 370" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M146 238L110 182M254 238L290 182" fill="none" stroke="${INK}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M96 112C60 112 48 158 78 182C98 198 128 186 134 160L104 152L128 126C120 116 108 112 96 112Z" fill="#ef5350" ${K}/>
+      <path d="M304 112C340 112 352 158 322 182C302 198 272 186 266 160L296 152L272 126C280 116 292 112 304 112Z" fill="#ef5350" ${K}/>
+      <path d="M176 220L170 184M224 220L230 184" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="200" cy="282" rx="106" ry="72" fill="#ef5350" ${K}/>
+      <circle cx="150" cy="258" r="9" fill="#ff8a80"/>
+      <circle cx="250" cy="258" r="9" fill="#ff8a80"/>
+      <circle cx="200" cy="236" r="8" fill="#ff8a80"/>
+      <circle cx="170" cy="174" r="18" fill="#fff" ${K}/>
+      <circle cx="230" cy="174" r="18" fill="#fff" ${K}/>
+      <ellipse cx="171" cy="175" rx="9" ry="11" fill="${INK}"/>
+      <circle cx="174.2" cy="170.6" r="3.4" fill="#fff"/>
+      <ellipse cx="229" cy="175" rx="9" ry="11" fill="${INK}"/>
+      <circle cx="232.2" cy="170.6" r="3.4" fill="#fff"/>
+      <ellipse cx="146" cy="296" rx="13" ry="8" fill="#f8a5c2"/>
+      <ellipse cx="254" cy="296" rx="13" ry="8" fill="#f8a5c2"/>
+      <path d="M176 300Q200 320 224 300" fill="none" stroke="${INK}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`),
+  },
+  // ---- end generated ----
 ];

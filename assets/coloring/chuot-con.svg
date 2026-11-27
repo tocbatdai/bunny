@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-label="chuot-con">
+<rect width="440" height="440" fill="#fff"/>
+<style>.region{fill:#fff;stroke:#4a3f55;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#4a3f55;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#4a3f55}</style>
+<path class="line" d="M262 340C330 352 364 304 336 268Q322 252 312 266" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="200" cy="296" rx="78" ry="74" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="200" cy="312" rx="42" ry="46" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="168" cy="366" rx="26" ry="14" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="232" cy="366" rx="26" ry="14" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="122" cy="116" r="48" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="122" cy="116" r="29" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="278" cy="116" r="48" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="278" cy="116" r="29" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="200" cy="188" rx="86" ry="74" transform="translate(20 20)"/>
+<ellipse class="dot" cx="166" cy="180" rx="12" ry="15" transform="translate(20 20)"/>
+<circle fill="#fff" cx="170.2" cy="174" r="4.6" transform="translate(20 20)"/>
+<ellipse class="dot" cx="234" cy="180" rx="12" ry="15" transform="translate(20 20)"/>
+<circle fill="#fff" cx="238.2" cy="174" r="4.6" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="138" cy="216" rx="14" ry="9" transform="translate(20 20)"/>
+<ellipse class="region" data-region="1" cx="262" cy="216" rx="14" ry="9" transform="translate(20 20)"/>
+<circle class="region" data-region="1" cx="200" cy="210" r="10" transform="translate(20 20)"/>
+<path class="line" d="M190 228Q200 236 210 228" transform="translate(20 20)"/>
+<path class="line" d="M122 204L84 196M122 218L86 228M278 204L316 196M278 218L314 228" transform="translate(20 20)"/>
+</svg>
